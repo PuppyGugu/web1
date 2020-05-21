@@ -1,0 +1,47 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+.imsi-title{color:#003c8a; font-weight:700; font-size:3.2em; letter-spacing:-0.1em;}
+.imsi-category{margin-top:10px; text-align:left; font-weight:500; font-size:1.2em; letter-spacing:-0.1em; margin:0;}
+.imsi-text{margin-top:0; text-align:left; font-weight:300; font-size:1.2em; letter-spacing:-0.1em;}
+.point{font-weight:900; color:#003c8a;}
+/*p{line-height:10px;}*/
+p:not(.imsi-text):not(.imsi-category){line-height:10px; line-height:10px; text-shadow:0px 1px 2px rgba(0,0,0,.1);}
+
+body{text-align:center; padding:0; margin:0; background-image:url('../img/IMSI_Background.png'); background-size:cover; background-repeat:no-repeat; background-attachment:fixed; background-position:center;}
+
+a{text-decoration:none;}
+
+.logo{margin-top:50px;}
+.imsi-sub-frame{position:relative; width:850px; height:600px; background-color:rgba(255,255,255,.7); border-radius:10px; margin:0 auto; margin-top:20px;}
+.imsi-left{margin-top:30px; position:absolute; left:0; width:425px; height:540px; border-right:1px solid rgba(255,255,255.7);}
+.imsi-right{margin-top:30px; position:absolute; right:0; width:425px; height:540px; border-right:1px solid rgba(255,255,255.7);}
+
+.imsi-right iframe{margin-bottom:5px; border-radius:5px;}
+
+.imsi-left-content-frame{margin:0 auto; width:350px;}
+.copyright{margin-top:20px;}
+.imsi-button{margin:0 auto; color:#fff; border:1px solid #003c8a; background-color:#003c8a; text-align:center; padding-top:15px; padding-bottom:15px; width:390px; transition:.2s; border-radius:10px;}
+.imsi-button:hover{border:1px solid #0a1b7a; background-clip:#0a1b7a;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
