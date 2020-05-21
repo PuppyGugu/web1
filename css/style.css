@@ -13,8 +13,7 @@ body{font-family:notoSans;}
 
 /* 임시 */
 #wrap{padding:50px 50px;}
-#container h1{font-size:30px; font-weight:bold;}
-#container p{font-size:20px; font-weight:bold;}
+#container p{font-size:25px; font-weight:bold;}
 #container a{color:coral; font-size:20px; font-weight:bold; text-decoration:none;}
 
 
