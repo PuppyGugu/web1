@@ -9,23 +9,24 @@ ul, ol, li{list-style:none;}
 body{font-family:notoSans;}
 
 /* #header */
-#header{position:relative; height:50px; background:rgba(0,0,0,.6);}
+#header{position:relative; width:100%; height:50px; background:rgba(0,0,0,.6);}
 
-#header .logo{position:absolute; top:5px; left:30px;}
+#header .logo{position:absolute; top:10px; left:30px;}
 #header .logo > a{}
 #header .logo > a > img{height:30px;}
 
 #header .menu{position:absolute; top:15px; right:30px;}
-#header .menu > img{height:20px;}
+#header .menu .menuBt{height:20px;}
 
 /* #container */
 #container{}
 
 
 /* #container .main*/
-#container .main{width:100%; height:700px; background:url('../img/mainBg.jpg') center bottom no-repeat; background-size:cover; color:#fff; text-align:center;}
-#container .main > h2{}
-#container .main > p{}
+#container .main{width:100%; height:500px; background:coral url('../img/mainBg.jpg') center bottom no-repeat; background-size:cover; color:#2f2f2f; text-align:center;}
+#container .main .txt{display:inline-block; margin-top:160px; padding:20px; outline:4px double #fff; background:rgba(255,255,255,.8);}
+#container .main .txt > h2{font-size:24px; line-height:48px;}
+#container .main .txt > p{font-size:16px; line-height:32px;}
 
 
 
