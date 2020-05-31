@@ -31,7 +31,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #portfolio strong.tit{font-size:24px;}
 /* 나중에 :after 일괄 적용되게 수정 할 것 */
 #portfolio strong.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
-#portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:20px 0; border:3px double #f1f1f1;}
+#portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:20px 0; border:3px double #9f9f9f;}
 #portfolio .portfolioCon > a > img{width:100%;}
 
 /* #footer */
