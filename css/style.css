@@ -15,8 +15,8 @@ body{font-family:notoSans;}
 #header .logo > a{}
 #header .logo > a > img{display:block; height:26px;}
 
-#header .menu{position:absolute; top:15px; right:30px;}
-#header .menu .menuBt{height:20px;}
+#header .sideBt{position:absolute; top:15px; right:30px;}
+#header .sideBt > img{height:20px;}
 
 
 /* #main*/
