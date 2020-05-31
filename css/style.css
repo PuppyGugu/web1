@@ -26,7 +26,7 @@ body{font-family:notoSans;}
 #main .txt > p{font-size:16px; line-height:22px;}
 
 /* #portfolio */
-#portfolio{padding:20px 15px; background:#444;}
+#portfolio{padding:60px 15px; background:#444;}
 
 #portfolio strong.tit{font-size:24px;}
 #portfolio strong.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
