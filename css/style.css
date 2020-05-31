@@ -9,7 +9,7 @@ ul, ol, li{list-style:none;}
 body{font-family:notoSans;}
 
 /* #header */
-#header{position:relative; width:100%; height:50px; background:rgba(0,0,0,.6);}
+#header{position:fixed; width:100%; height:50px; background:rgba(255,255,255,.8); z-index:10;}
 
 #header .logo{position:absolute; top:12px; left:30px;}
 #header .logo > a{}
@@ -18,18 +18,22 @@ body{font-family:notoSans;}
 #header .menu{position:absolute; top:15px; right:30px;}
 #header .menu .menuBt{height:20px;}
 
-/* #container */
-#container{}
 
+/* #main*/
+#main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:100% auto; color:#2f2f2f; text-align:center;}
+#main .txt{display:inline-block; position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; background:rgba(255,255,255,.8); word-break:keep-all;}
+#main .txt > h2{font-size:24px; line-height:48px;}
+#main .txt > p{font-size:16px; line-height:22px;}
 
-/* #container .main*/
-#container .main{position:relative; width:100%; height:500px; background:#020D41 url('../img/mainBg.jpg') center bottom no-repeat; background-size:cover; color:#2f2f2f; text-align:center;}
-#container .main .txt{display:inline-block; position:absolute; top:100px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; background:rgba(255,255,255,.8); word-break:keep-all;}
-#container .main .txt > h2{font-size:24px; line-height:48px;}
-#container .main .txt > p{font-size:16px; line-height:22px;}
+/* #portfolio */
+#portfolio{padding:20px 15px; background:#444;}
 
+#portfolio strong.tit{font-size:24px;}
+#portfolio strong.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
 
-
+#portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:20px 0;}
+#portfolio .portfolioCon > a{}
+#portfolio .portfolioCon > a > img{width:100%;}
 
 
 
