@@ -22,9 +22,10 @@ body{color:#2f2f2f; font-family:notoSans;}
 #main .txt > p{font-size:16px; line-height:22px;}
 
 /* #menuTab */
-#menuTab{overflow:hidden; border-bottom:1px solid #f1f1f1;}
+#menuTab{overflow:hidden;}
 #menuTab > li{float:left; width:25%;}
-#menuTab > li > a{display:block; height:40px; color:inherit; line-height:40px; font-size:16px; /*font-weight:bold;*/ text-align:center; text-decoration:none;}
+#menuTab > li > a{display:block; height:40px; border-bottom:1px solid #f1f1f1; color:inherit; line-height:40px; font-size:16px; text-align:center; text-decoration:none;}
+#menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}
 
 /* #portfolio */
 #portfolio{padding:60px 15px; background:#f6f6f6;}
