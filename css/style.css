@@ -43,11 +43,15 @@ body{color:#2f2f2f; font-family:notoSans;}
 #portfolio .portfolioCon > a > img{width:100%;}
 
 /* #footer */
-#footer{background:#2f2f2f; color:rgba(255,255,255,.7); font-size:14px;}
+/*
+#footer{background:#2f2f2f; color:rgba(255,255,255,.7); font-size:14px; text-align:center;}
 
+#footer .copy{padding:16px 0;}
+*/
 
-
-
+#footer{background:#2f2f2f; color:#fff;}
+#footer > img{width:40px;}
+#footer > small{font-size:16px;}
 
 
 
