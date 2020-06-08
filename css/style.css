@@ -15,16 +15,15 @@ body{color:#2f2f2f; font-family:notoSans;}
 #header .sideBt{position:absolute; top:15px; right:30px;}
 #header .sideBt > img{height:20px;}
 
-
-
 /* #side */
-#side{z-index:9999; display:none; position:fixed; top:0; right:0; width:220px; height:100%; background:coral;}
+#side{z-index:20; display:none; position:fixed; top:0; right:0; width:220px; height:100%; background:#2f2f2f;}
 
 
 
 
 
 
+#side .close{}
 
 
 
@@ -49,33 +48,28 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 
 
-
 /* 나중에 :after 일괄 적용되게 수정 할 것 */
-
-
 #portfolio p.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
 #portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
 #portfolio .portfolioCon > a > img{width:100%;}
 
 /* #footer */
-/*#footer{color:rgba(255,255,255,.7);}*/
-
-
-
-
-
-#footer{padding:16px 0; background:#2f2f2f; color:#fff; font-size:14px; text-align:center;}
-
-#footer > img{width:40px; margin-top:10px;}
-
-#footer > address{margin-top:10px; text-decoration:}
-
-#footer > address > ul{}
-#footer > address > ul > li{}
-#footer > address > ul > li.place{}
-#footer > address > ul > li.call{}
-
+#footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
+#footer > img{height:30px; margin-top:10px;}
+#footer > address{margin-top:10px; font-style:normal; text-decoration:}
 #footer > .copy{margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
