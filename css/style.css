@@ -28,9 +28,9 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 
 
-#side .sideBody{margin-top:140px;}
+#side .sideBody{margin-top:130px;}
 #side .sideBody > li{}
-#side .sideBody > li > a{display:block; height:60px; color:#fff; font-size:16px; text-decoration:none; text-indent:22px;}
+#side .sideBody > li > a{display:block; height:60px; color:#fff; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
 
 #side .sideBody > li:nth-of-type(1) > a{}
 #side .sideBody > li:nth-of-type(2) > a{}
