@@ -16,7 +16,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #header .sideBt > img{height:20px;}
 
 /* #side */
-#side{z-index:20; display:none; position:fixed; top:0; right:0; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
+#side{z-index:20; position:fixed; top:0; right:-220px; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
 
 
 #side .sideHead{height:80px; border-bottom:2px solid #595959;}
@@ -46,6 +46,16 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
+
+
+/* #side - #dim */
+#dim{z-index:19; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
+
+
+
+
+
+
 
 
 
