@@ -1,3 +1,8 @@
+/* popUp */
+$('.popUpClose').on('click',function(){
+    $('#popUp').hide();
+});
+
 /* sideOpen */
 $('.sideBt').on('click',function(){
     $('#side').animate({
