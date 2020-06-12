@@ -1,4 +1,4 @@
-/* popUp */
+/* popUpClose */
 $('.popUpClose').on('click',function(){
     $('#popUp').hide();
 });
@@ -8,9 +8,7 @@ $('.sideBt').on('click',function(){
     $('#side').animate({
         'right':'0'
     },500);
-    $('body').append('<div id="dim"></div>',function(){
-        $('#dim').fadeIn();
-    });
+    $('body').append('<div id="dim"></div>');
     return false;
 });
 
@@ -24,6 +22,14 @@ $('.close').on('click',function(){
     });
 });
 
+$(document).on('click','#dim',function(){
+    $('#side').animate({
+        'right':'-220px'
+    },500);
+    $('#dim').fadeOut(function(){
+        $('#dim').remove();
+    });
+});
 
 
 

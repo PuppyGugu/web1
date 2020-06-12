@@ -8,18 +8,12 @@ ul, ol, li{list-style:none;}
 /* body */
 body{color:#2f2f2f; font-family:notoSans;}
 
-
-
-#popUp{z-index:18; position:fixed; bottom:0; right:26px; width:100px; height:140px;}
+/* popUp */
+#popUp{/*display:none;*/ z-index:18; position:fixed; bottom:0; right:26px; width:100px; height:140px;}
 #popUp > a{text-decoration:none; text-align:center;}
 #popUp > a > img{display:block; width:80px; margin:0 auto;}
 #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
 #popUp > button{position:absolute; top:-12px; right:-4px; width:30px; height:30px; padding:5px; border:2px solid #616161; border-radius:50%; background:#fff; color:#616161; font-size:16px;}
-
-
-
-
-
 
 /* #header */
 #header{z-index:10; opacity:.8; position:fixed; width:100%; height:50px; border-bottom:1px solid #f1f1f1; background:#fff;}
@@ -30,48 +24,16 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /* #side */
 #side{z-index:20; position:fixed; top:0; right:-220px; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
-
-
 #side .sideHead{height:80px; border-bottom:2px solid #595959;}
 #side .sideHead > h1{position:absolute; top:27px; left:62px;}
 #side .sideHead > h1 > img{display:block; height:26px;}
-
 #side .sideHead > p{position:absolute; top:26.5px; right:62px; color:#fff; font-size:18px;}
-
-
-
-
 #side .sideBody{margin-top:130px;}
-#side .sideBody > li{}
 #side .sideBody > li > a{display:block; height:60px; color:#fff; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
-
-#side .sideBody > li:nth-of-type(1) > a{}
-#side .sideBody > li:nth-of-type(2) > a{}
-#side .sideBody > li:nth-of-type(3) > a{}
-#side .sideBody > li:nth-of-type(4) > a{}
-
-
-
-
-
-
-
-
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
-
 
 /* #side - #dim */
 #dim{z-index:19; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
-
-
-
-
-
-
-
-
-
-
 
 /* #main*/
 #main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:contain; text-align:center;}
@@ -85,17 +47,35 @@ body{color:#2f2f2f; font-family:notoSans;}
 #menuTab > li > a{display:block; height:40px; border-bottom:1px solid #f1f1f1; color:inherit; line-height:40px; font-size:16px; text-align:center; text-decoration:none;}
 #menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}
 
+/* content common */
+#portfolio, #skill, #about, #contact{padding:60px 15px 20px; background:#f6f6f6; border-bottom:2px solid coral;}
+p.tit{font-size:24px;}
+p.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
+
 /* #portfolio */
-#portfolio{padding:60px 15px 20px; background:#f6f6f6;}
-#portfolio p.tit{font-size:24px;}
-
-
-
-
-/* 나중에 :after 일괄 적용되게 수정 할 것 */
-#portfolio p.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
 #portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
 #portfolio .portfolioCon > a > img{width:100%;}
+
+/* #skill */
+/* #about */
+/* #contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* #footer */
 #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
