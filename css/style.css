@@ -29,7 +29,8 @@ body{color:#2f2f2f; font-family:notoSans;}
 #side .sideHead > h1 > img{display:block; height:26px;}
 #side .sideHead > p{position:absolute; top:26.5px; right:62px; color:#fff; font-size:18px;}
 #side .sideBody{margin-top:130px;}
-#side .sideBody > li > a{display:block; height:60px; color:#fff; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
+#side .sideBody > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
+#side .sideBody > li > a.on{color:#fff;}
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
 
 /* #side - #dim */
@@ -47,18 +48,61 @@ body{color:#2f2f2f; font-family:notoSans;}
 #menuTab > li > a{display:block; height:40px; border-bottom:1px solid #f1f1f1; color:inherit; line-height:40px; font-size:16px; text-align:center; text-decoration:none;}
 #menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}
 
-/* content common */
-#portfolio, #skill, #about, #contact{padding:60px 15px 20px; background:#f6f6f6; border-bottom:2px solid coral;}
+/* #contents */
+#contents > div{padding:60px 15px 20px; background:#f6f6f6;}
+#contents #skill, #contents #about, #contents #contact{display:none;}
 p.tit{font-size:24px;}
 p.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
 
-/* #portfolio */
+    /* #contents #portfolio */
 #portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
 #portfolio .portfolioCon > a > img{width:100%;}
 
-/* #skill */
-/* #about */
-/* #contact */
+
+
+    /* #contents #skill */
+#contents #skill{}
+
+#contents #skill p.tit{}
+#contents #skill p.txt{}
+#contents #skill .skillSet{}
+
+#contents #skill .skillSet > div{position:relative; margin-bottom:30px;}
+#contents #skill .skillSet > div .skillTit{font-size:12px; font-weight:bold; letter-spacing:1px; text-indent:10px; text-transform:uppercase;}
+#contents #skill .skillSet > div .skillBg{position:absolute; top:24px; left:0; width:100%; height:12px; background:#acacac;}
+#contents #skill .skillSet > div .skillBar{position:absolute; top:27px; left:0; height:6px; background:#6a6a6a;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contents #skill .skillSet .html .skillBar{width:60%;}
+#contents #skill .skillSet .css .skillBar{width:60%;}
+#contents #skill .skillSet .jquery .skillBar{width:40%;}
+#contents #skill .skillSet .angular .skillBar{width:0%;}
+#contents #skill .skillSet .react .skillBar{width:0%;}
+#contents #skill .skillSet .photoshop .skillBar{width:90%;}
+#contents #skill .skillSet .illustrator .skillBar{width:70%;}
+
+
+
+
+
+    /* #contents #about */
+
+
+
+
+    /* #contents #contact */
 
 
 

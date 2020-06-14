@@ -12,7 +12,7 @@ $('.sideBt').on('click',function(){
     return false;
 });
 
-/* sideClose */
+/* sideClose - close */
 $('.close').on('click',function(){
     $('#side').animate({
         'right':'-220px'
@@ -22,6 +22,7 @@ $('.close').on('click',function(){
     });
 });
 
+/* sideClose - dim */
 $(document).on('click','#dim',function(){
     $('#side').animate({
         'right':'-220px'
@@ -30,6 +31,35 @@ $(document).on('click','#dim',function(){
         $('#dim').remove();
     });
 });
+
+/* side - sideBody */
+$('.sideBody').find('a').on('click',function(){
+    $('.sideBody').find('a').removeClass('on');
+    $(this).addClass('on');
+    
+    $('#contents').children('div').hide();
+    $($(this).attr('href')).show();
+    
+    $('#side').animate({
+        'right':'-220px'
+    },500);
+    $('#dim').fadeOut(function(){
+        $('#dim').remove();
+    });
+});
+
+/* menuTab */
+$('#menuTab').find('a').on('click',function(){
+    $('#menuTab').find('a').removeClass('on');
+    $(this).addClass('on');
+    $('#contents').children('div').hide();
+    $($(this).attr('href')).show();
+});
+
+
+
+
+
 
 
 
