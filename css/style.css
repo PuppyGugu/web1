@@ -9,7 +9,7 @@ ul, ol, li{list-style:none;}
 body{color:#2f2f2f; font-family:notoSans;}
 
 /* popUp */
-#popUp{/*display:none;*/ z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
+#popUp{display:none; z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
 #popUp > a{text-decoration:none; text-align:center;}
 #popUp > a > img{display:block; width:80px; margin:0 auto;}
 #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
@@ -52,7 +52,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents > div{padding:60px 15px 20px; background:#f6f6f6;}
 #contents #skill, #contents #about, #contents #contact{display:none;}
 p.tit{font-size:24px;}
-p.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; background:#dedede;}
+p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
 
     /* #contents #portfolio */
 #portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
@@ -103,6 +103,8 @@ p.tit:after{display:block; content:""; width:28px; height:3px; margin-top:16px; 
 
 
     /* #contents #contact */
+#contents #contact{}
+#contents #contact .call{display:block; border:1px solid #2f2f2f; background:url('../img/call.png') no-repeat; background-size:; color:inherit; text-decoration:none;}
 
 
 
