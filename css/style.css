@@ -9,7 +9,7 @@ ul, ol, li{list-style:none;}
 body{color:#2f2f2f; font-family:notoSans;}
 
 /* popUp */
-#popUp{display:none; z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
+#popUp{/*display:none;*/ z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
 #popUp > a{text-decoration:none; text-align:center;}
 #popUp > a > img{display:block; width:80px; margin:0 auto;}
 #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
