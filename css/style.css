@@ -104,7 +104,10 @@ p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40p
 
     /* #contents #contact */
 #contents #contact{}
-#contents #contact .call{display:block; height:50px; border:1px solid #2f2f2f; background:url('../img/call.png') 36vw center no-repeat; background-size:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-indent:46vw;}
+#contents #contact .txt{margin-bottom:40px;}
+#contents #contact > a{display:block; height:50px; margin-top:24px; border:1px solid #2f2f2f; border-radius:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-align:center;}
+#contents #contact > a:last-child{margin-bottom:24px;}
+#contents #contact > a:hover{background:#2f2f2f; color:#fff;}
 
 
 
