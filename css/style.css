@@ -24,11 +24,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /* #side */
 #side{z-index:20; position:fixed; top:0; right:-220px; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
-#side .sideHead{height:80px; border-bottom:2px solid #595959;}
-#side .sideHead > h1{position:absolute; top:27px; left:62px;}
-#side .sideHead > h1 > img{display:block; height:26px;}
-#side .sideHead > p{position:absolute; top:26.5px; right:62px; color:#fff; font-size:18px;}
-#side .sideBody{margin-top:130px;}
+#side .sideBody{margin-top:200px;}
 #side .sideBody > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
 #side .sideBody > li > a.on{color:#fff;}
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
@@ -49,7 +45,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}
 
 /* #contents */
-#contents > div{padding:60px 15px 20px; background:#f6f6f6;}
+#contents > div{padding:60px 20px 20px; background:#f6f6f6;}
 #contents #skill, #contents #about, #contents #contact{display:none;}
 p.tit{font-size:24px;}
 p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
@@ -60,21 +56,22 @@ p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40p
 
 
 
+
+
+
     /* #contents #skill */
 #contents #skill{}
-
-#contents #skill p.tit{}
-#contents #skill p.txt{}
-#contents #skill .skillSet{}
-
-#contents #skill .skillSet > div{position:relative; margin-bottom:30px;}
-#contents #skill .skillSet > div .skillTit{font-size:12px; font-weight:bold; letter-spacing:1px; text-indent:10px; text-transform:uppercase;}
-#contents #skill .skillSet > div .skillBg{position:absolute; top:24px; left:0; width:100%; height:12px; background:#acacac;}
-#contents #skill .skillSet > div .skillBar{position:absolute; top:27px; left:0; height:6px; background:#6a6a6a;}
+#contents #skill .tit{}
 
 
 
 
+
+
+#contents #skill > div{text-align:center;}
+#contents #skill > div .skillBox{width:100px; height:100px; background:#020d41; border-radius:50%;}
+#contents #skill > div .skillBox > img{height:80px;}
+#contents #skill > div > strong{font-size:16px; text-transform:uppercase;}
 
 
 
@@ -85,46 +82,34 @@ p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40p
 
 
 
-#contents #skill .skillSet .html .skillBar{width:60%;}
-#contents #skill .skillSet .css .skillBar{width:60%;}
-#contents #skill .skillSet .jquery .skillBar{width:40%;}
-#contents #skill .skillSet .angular .skillBar{width:0%;}
-#contents #skill .skillSet .react .skillBar{width:0%;}
-#contents #skill .skillSet .photoshop .skillBar{width:90%;}
-#contents #skill .skillSet .illustrator .skillBar{width:70%;}
+
+
+
+
+
+
+
+
+
 
 
 
 
 
     /* #contents #about */
-
-
-
+#contents #about img{display:block; height:200px; margin:50px auto 0;}
+#contents #about .txt{margin:40px 0; padding:0 10vw; font-size:16px; text-align:center; word-break:keep-all;}
 
     /* #contents #contact */
-#contents #contact{}
-#contents #contact .txt{margin-bottom:40px;}
-#contents #contact > a{display:block; height:50px; margin-top:24px; border:1px solid #2f2f2f; border-radius:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-align:center;}
+#contents #contact .txt{margin-bottom:40px; font-size:16px; text-align:center; word-break:keep-all;}
+#contents #contact > a{display:block; height:50px; margin-top:24px; border:1px solid #020d41; border-radius:20px; color:#020d41; line-height:50px; font-size:16px; text-decoration:none; text-indent:47vw;}
+#contents #contact .mail{background:url('../img/mail.png') 39vw center no-repeat; background-size:16px;}
+#contents #contact .mail:hover, #contents #contact .mail:focus{background:#020d41 url('../img/mailOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .sms{background:url('../img/sms.png') 39vw center no-repeat; background-size:16px;}
+#contents #contact .sms:hover, #contents #contact .sms:focus{background:#020d41 url('../img/smsOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
+#contents #contact .call:hover, #contents #contact .call:focus{background:#020d41 url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
 #contents #contact > a:last-child{margin-bottom:24px;}
-#contents #contact > a:hover{background:#2f2f2f; color:#fff;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* #footer */
 #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
