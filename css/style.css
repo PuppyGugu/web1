@@ -9,7 +9,7 @@ ul, ol, li{list-style:none;}
 body{color:#2f2f2f; font-family:notoSans;}
 
 /* popUp */
-#popUp{/*display:none;*/ z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
+#popUp{display:none; z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
 #popUp > a{text-decoration:none; text-align:center;}
 #popUp > a > img{display:block; width:80px; margin:0 auto;}
 #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
@@ -24,13 +24,14 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /* #side */
 #side{z-index:20; position:fixed; top:0; right:-220px; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
-#side .sideBody{margin-top:200px;}
-#side .sideBody > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
-#side .sideBody > li > a.on{color:#fff;}
+#side .sideInner{margin-top:186px;}
+#side .sideInner > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
+#side .sideInner > li > a:hover, #side .sideInner > li > a:focus{color:#fff;}
+/*#side .sideInner > li > a.on{color:#fff;}*/
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
 
 /* #side - #dim */
-#dim{z-index:19; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
+#dim{z-index:19; display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
 
 /* #main*/
 #main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:contain; text-align:center;}
@@ -39,76 +40,44 @@ body{color:#2f2f2f; font-family:notoSans;}
 #main .txt > p{font-size:16px; line-height:22px;}
 
 /* #menuTab */
-#menuTab{overflow:hidden;}
+/*#menuTab{overflow:hidden;}
 #menuTab > li{float:left; width:25%;}
 #menuTab > li > a{display:block; height:40px; border-bottom:1px solid #f1f1f1; color:inherit; line-height:40px; font-size:16px; text-align:center; text-decoration:none;}
-#menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}
+#menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}*/
 
 /* #contents */
-#contents > div{padding:60px 20px 20px; background:#f6f6f6;}
-#contents #skill, #contents #about, #contents #contact{display:none;}
+#contents > div{padding:60px 20px 20px;}
+#contents > div:nth-child(odd){background:#f6f6f6;}
+/*#contents #skill, #contents #about, #contents #contact{display:none;}*/
 p.tit{font-size:24px;}
 p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
-
-    /* #contents #portfolio */
-#portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
-#portfolio .portfolioCon > a > img{width:100%;}
-
-
-
-
-
-
-    /* #contents #skill */
-#contents #skill{text-align:center;}
-#contents #skill .tit{text-align:left;}
-
-
-
-
-
-
-#contents #skill > div{display:inline-block; width:80px; margin:0 40px 40px;}
-#contents #skill > div .skillBox{width:100%; height:80px; background:#2f2f2f; border-radius:50%;}
-#contents #skill > div .skillBox > img{height:40px; margin-top:22px;}
-#contents #skill > div > strong{font-size:16px; text-transform:uppercase;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /* #contents #about */
 #contents #about img{display:block; height:200px; margin:50px auto 0;}
 #contents #about .txt{margin:40px 0; padding:0 10vw; font-size:16px; text-align:center; word-break:keep-all;}
 
+    /* #contents #skill */
+#contents #skill{text-align:center;}
+#contents #skill .tit{text-align:left;}
+#contents #skill .skillInner{overflow:hidden; width:90%; margin:0 auto;}
+#contents #skill .skillInner > div{float:left; width:50%; margin-bottom:50px;}
+#contents #skill .skillInner > div .skillBox{width:80px; height:80px; background:#ddd; border-radius:50%; margin:0 auto;}
+#contents #skill .skillInner > div .skillBox > img{margin-top:21px; height:40px;}
+#contents #skill .skillInner > div > strong{display:block; margin-top:6px; font-size:16px; text-transform:uppercase;}
+
+    /* #contents #portfolio */
+#portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
+#portfolio .portfolioCon > a > img{width:100%;}
+
     /* #contents #contact */
 #contents #contact .txt{margin-bottom:40px; font-size:16px; text-align:center; word-break:keep-all;}
-#contents #contact > a{display:block; height:50px; margin-top:24px; border:1px solid #020d41; border-radius:20px; color:#020d41; line-height:50px; font-size:16px; text-decoration:none; text-indent:47vw;}
+#contents #contact > a{display:block; height:50px; margin-top:24px; border:1px solid #2f2f2f; border-radius:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-indent:47vw;}
 #contents #contact .mail{background:url('../img/mail.png') 39vw center no-repeat; background-size:16px;}
-#contents #contact .mail:hover, #contents #contact .mail:focus{background:#020d41 url('../img/mailOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .mail:hover, #contents #contact .mail:focus{background:#2f2f2f url('../img/mailOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
 #contents #contact .sms{background:url('../img/sms.png') 39vw center no-repeat; background-size:16px;}
-#contents #contact .sms:hover, #contents #contact .sms:focus{background:#020d41 url('../img/smsOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .sms:hover, #contents #contact .sms:focus{background:#2f2f2f url('../img/smsOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
 #contents #contact .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
-#contents #contact .call:hover, #contents #contact .call:focus{background:#020d41 url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .call:hover, #contents #contact .call:focus{background:#2f2f2f url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
 #contents #contact > a:last-child{margin-bottom:24px;}
 
 /* #footer */
@@ -132,5 +101,15 @@ p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40p
 
 
 
-
+@media screen and (min-width:1024px){
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
 
