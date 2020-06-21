@@ -43,6 +43,9 @@ $(document).on('click','#dim',function(){
     });
 });
 
+/* main open */
+$('#main').children('.txt').fadeIn(2000);
+
 /* portfolio toggle */
 $('#more').on('click',function(){
     if($(this).hasClass('fold') == false){
