@@ -50,7 +50,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents > div:nth-child(odd){background:#f6f6f6;}
 /*#contents #skill, #contents #about, #contents #contact{display:none;}*/
 p.tit{font-size:24px;}
-p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
+p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
 
     /* #contents #about */
 #contents #about img{display:block; height:200px; margin:50px auto 0;}
@@ -59,7 +59,7 @@ p.tit:after{display:block; content:""; width:28px; height:3px; margin:16px 0 40p
     /* #contents #skill */
 #contents #skill{text-align:center;}
 #contents #skill .tit{text-align:left;}
-#contents #skill > span{display:block; margin-bottom:30px; font-size:18px; font-weight:bold;}
+#contents #skill > span{display:inline-block; margin-bottom:30px; border-bottom:2px solid #dedede; line-height:40px; font-size:18px; font-weight:bold;}
 #contents #skill > span:nth-of-type(2){margin-top:20px;}
 #contents #skill .skillInner{overflow:hidden; width:90%; margin:0 auto;}
 #contents #skill .skillInner > div{float:left; width:50%; margin-bottom:50px;}

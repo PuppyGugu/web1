@@ -44,7 +44,18 @@ $(document).on('click','#dim',function(){
 });
 
 /* main open */
-$('#main').children('.txt').fadeIn(2000);
+//$('#main').children('.txt').fadeIn(2000);
+
+$('#main').children('.txt').fadeIn(function(){
+    $(this).fadeOut(function(){
+        $(this).fadeIn(function(){
+            $(this).fadeOut(500,function(){
+                $(this).slideDown(500);
+            });
+        });
+    });
+});
+
 
 /* portfolio toggle */
 $('#more').on('click',function(){
