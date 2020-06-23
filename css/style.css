@@ -9,7 +9,7 @@ ul, ol, li{list-style:none;}
 body{color:#2f2f2f; font-family:notoSans;}
 
 /* popUp */
-#popUp{/*display:none;*/ z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
+#popUp{display:none; z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
 #popUp > a{text-decoration:none; text-align:center;}
 #popUp > a > img{display:block; width:80px; margin:0 auto;}
 #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
@@ -59,9 +59,19 @@ p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40p
     /* #contents #skill */
 #contents #skill{text-align:center;}
 #contents #skill .tit{text-align:left;}
-#contents #skill > span{display:inline-block; margin-bottom:30px; border-bottom:2px solid #dedede; line-height:40px; font-size:18px; font-weight:bold;}
+
+/*#contents #skill > span{display:inline-block; height:38px; padding:2px 30px; border-top:2px solid #dedede; border-bottom:2px solid #dedede; line-height:30px; font-size:18px; font-weight:bold;}*/
+
+#contents #skill > span{display:inline-block; margin-bottom:10px; padding:6px 40px; font-size:16px; font-weight:bold; border:2px solid #dedede; border-radius:10px; /*box-shadow:5px 5px 5px #dedede;*/}
+
+/*
+#contents #skill > span:before, #contents #skill > span:after{content:""; position:absolute; top:0; width:40px; height:2px; margin-top:13px; background:#dedede;}
+#contents #skill > span:before{left:106%;}
+#contents #skill > span:after{right:106%;}
+*/
+
 #contents #skill > span:nth-of-type(2){margin-top:20px;}
-#contents #skill .skillInner{overflow:hidden; width:90%; margin:0 auto;}
+#contents #skill .skillInner{overflow:hidden; width:90%; margin:30px auto 0;}
 #contents #skill .skillInner > div{float:left; width:50%; margin-bottom:50px;}
 #contents #skill .skillInner > div .skillBox{width:80px; height:80px; background:#ddd; border-radius:50%; margin:0 auto;}
 #contents #skill .skillInner > div .skillBox > img{margin-top:21px; height:40px;}
