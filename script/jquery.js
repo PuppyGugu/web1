@@ -3,7 +3,7 @@ $('.popUpClose').on('click',function(){
     $('#popUp').hide();
 });
 
-/* side Open */
+/* side - sideOpen */
 $('.sideBt').on('click',function(){
     $('#side').animate({
         'right':'0'
@@ -13,7 +13,7 @@ $('.sideBt').on('click',function(){
     return false;
 });
 
-/* side close close */
+/* side close - close */
 $('.close').on('click',function(){
     $('#side').animate({
         'right':'-220px'
@@ -23,7 +23,7 @@ $('.close').on('click',function(){
     });
 });
 
-/* side a close */
+/* side - animate close */
 $('.sideInner').find('a').on('click',function(){
     $('#side').animate({
         'right':'-220px'
@@ -31,9 +31,13 @@ $('.sideInner').find('a').on('click',function(){
     $('#dim').fadeOut(function(){
         $('#dim').remove();
     });
+    $('html, body').stop().animate({
+        scrollTop:$($(this).attr('href')).offset().top
+    },500);
+    return false;
 });
 
-/* side close dim */
+/* sideDim - close */
 $(document).on('click','#dim',function(){
     $('#side').animate({
         'right':'-220px'
@@ -43,10 +47,10 @@ $(document).on('click','#dim',function(){
     });
 });
 
-/* main open */
+/* main - open */
 $('#main').children('.txt').fadeIn(2000);
 
-/* portfolio toggle */
+/* portfolioMore - toggle */
 $('#more').on('click',function(){
     if($(this).hasClass('fold') == false){
         $('.portfolioCon').slideDown(1000);
@@ -98,9 +102,6 @@ $('#more').on('click',function(){
     $('#contents').children('div').hide();
     $($(this).attr('href')).show();
 });*/
-
-
-
 
 
 
