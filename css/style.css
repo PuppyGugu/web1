@@ -62,7 +62,7 @@ p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40p
 
 /*#contents #skill > span{display:inline-block; height:38px; padding:2px 30px; border-top:2px solid #dedede; border-bottom:2px solid #dedede; line-height:30px; font-size:18px; font-weight:bold;}*/
 
-#contents #skill > span{display:inline-block; margin-bottom:10px; padding:6px 30px; font-size:16px; font-weight:bold; /*border:2px solid #dedede; border-radius:10px;*/ box-shadow:4px 4px 4px 2px #dedede;}
+#contents #skill > span{display:inline-block; margin-bottom:10px; padding:6px 30px; font-size:16px; font-weight:bold; border:1px solid #dedede; border-radius:19px; box-shadow:4px 4px 4px 2px #dedede;}
 
 /*
 #contents #skill > span:before, #contents #skill > span:after{content:""; position:absolute; top:0; width:40px; height:2px; margin-top:13px; background:#dedede;}

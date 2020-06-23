@@ -1,9 +1,9 @@
-/* popUp Close */
+/* popUp close */
 $('.popUpClose').on('click',function(){
     $('#popUp').hide();
 });
 
-/* side - sideOpen */
+/* side open */
 $('.sideBt').on('click',function(){
     $('#side').animate({
         'right':'0'
@@ -13,7 +13,7 @@ $('.sideBt').on('click',function(){
     return false;
 });
 
-/* side close - close */
+/* side close animate */
 $('.close').on('click',function(){
     $('#side').animate({
         'right':'-220px'
@@ -23,7 +23,6 @@ $('.close').on('click',function(){
     });
 });
 
-/* side - animate close */
 $('.sideInner').find('a').on('click',function(){
     $('#side').animate({
         'right':'-220px'
@@ -37,7 +36,6 @@ $('.sideInner').find('a').on('click',function(){
     return false;
 });
 
-/* sideDim - close */
 $(document).on('click','#dim',function(){
     $('#side').animate({
         'right':'-220px'
@@ -47,10 +45,10 @@ $(document).on('click','#dim',function(){
     });
 });
 
-/* main - open */
+/* main show */
 $('#main').children('.txt').fadeIn(2000);
 
-/* portfolioMore - toggle */
+/* portfolio toggle */
 $('#more').on('click',function(){
     if($(this).hasClass('fold') == false){
         $('.portfolioCon').slideDown(1000);
