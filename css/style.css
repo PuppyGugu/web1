@@ -5,6 +5,9 @@ ul, ol, li{list-style:none;}
 /* font */
 @font-face{src:url("../font/NotoSansCJKkr-Regular.otf"); font-family: "notoSans";}
 
+/* common */
+.pc{display:none;}
+
 /* body */
 body{color:#2f2f2f; font-family:notoSans;}
 
@@ -20,14 +23,13 @@ body{color:#2f2f2f; font-family:notoSans;}
 #header .logo{position:absolute; top:12px; left:30px;}
 #header .logo > a > img{display:block; height:26px;}
 #header .sideBt{position:absolute; top:15px; right:30px;}
-#header .sideBt > img{height:20px;}
+#header .sideBt > img{display:block; height:20px;}
 
 /* #side */
 #side{z-index:20; position:fixed; top:0; right:-220px; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
 #side .sideInner{margin-top:186px;}
 #side .sideInner > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
 #side .sideInner > li > a:hover, #side .sideInner > li > a:focus{color:#fff;}
-/*#side .sideInner > li > a.on{color:#fff;}*/
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
 
 /* #side - #dim */
@@ -39,103 +41,76 @@ body{color:#2f2f2f; font-family:notoSans;}
 #main .txt > h2{font-size:24px; line-height:48px;}
 #main .txt > p{font-size:16px; line-height:22px;}
 
-/* #menuTab */
-/*#menuTab{overflow:hidden;}
-#menuTab > li{float:left; width:25%;}
-#menuTab > li > a{display:block; height:40px; border-bottom:1px solid #f1f1f1; color:inherit; line-height:40px; font-size:16px; text-align:center; text-decoration:none;}
-#menuTab > li > a.on{background:#f6f6f6; border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:none;}*/
-
 /* #contents */
-#contents > div{padding:60px 20px 20px;}
+#contents > div{width:100%;}
+#contents > div > div{padding:60px 20px 20px;}
 #contents > div:nth-child(odd){background:#f6f6f6;}
-/*#contents #skill, #contents #about, #contents #contact{display:none;}*/
-p.tit{font-size:24px;}
-p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
+#contents > div > div > p.tit{font-size:24px;}
+#contents > div > div > p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
 
     /* #contents #about */
-#contents #about img{display:block; height:200px; margin:50px auto 0;}
-#contents #about .txt{margin:40px 0; padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
+#contents #about .aboutInner:after{content:""; display:block; margin-bottom:40px;}
+#contents #about .aboutInner > img{display:block; height:200px; margin:50px auto 0;}
+#contents #about .aboutInner .txt{padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
+#contents #about .aboutInner .txt:nth-of-type(2){margin-top:40px;}
 
     /* #contents #skill */
-#contents #skill{text-align:center;}
-#contents #skill .tit{text-align:left;}
-
-/*#contents #skill > span{display:inline-block; height:38px; padding:2px 30px; border-top:2px solid #dedede; border-bottom:2px solid #dedede; line-height:30px; font-size:18px; font-weight:bold;}*/
-
-#contents #skill > span{display:inline-block; margin-bottom:10px; padding:6px 30px; font-size:16px; font-weight:bold; border:1px solid #dedede; border-radius:19px; box-shadow:4px 4px 4px 2px #dedede;}
-
-/*
-#contents #skill > span:before, #contents #skill > span:after{content:""; position:absolute; top:0; width:40px; height:2px; margin-top:13px; background:#dedede;}
-#contents #skill > span:before{left:106%;}
-#contents #skill > span:after{right:106%;}
-*/
-
-#contents #skill > span:nth-of-type(2){margin-top:20px;}
-#contents #skill .skillInner{overflow:hidden; width:90%; margin:30px auto 0;}
-#contents #skill .skillInner > div{float:left; width:50%; margin-bottom:50px;}
-#contents #skill .skillInner > div .skillBox{width:80px; height:80px; background:#ddd; border-radius:50%; margin:0 auto;}
-#contents #skill .skillInner > div .skillBox > img{margin-top:21px; height:40px;}
-#contents #skill .skillInner > div > strong{display:block; margin-top:6px; font-size:16px; text-transform:uppercase;}
+#contents #skill .skillInner{text-align:center;}
+#contents #skill .skillInner .tit{text-align:left;}
+#contents #skill .skillInner > span{display:inline-block; margin-bottom:10px; padding:6px 30px; font-size:16px; font-weight:bold; border:1px solid #dedede; border-radius:19px; box-shadow:4px 4px 4px 2px #dedede;}
+#contents #skill .skillInner > span:nth-of-type(2){margin-top:20px;}
+#contents #skill .skillInner .skillCon{overflow:hidden; width:90%; margin:30px auto 0;}
+#contents #skill .skillInner .skillCon > div{float:left; width:50%; margin-bottom:50px;}
+#contents #skill .skillInner .skillCon > div .skillBox{width:80px; height:80px; background:#ddd; border-radius:50%; margin:0 auto;}
+#contents #skill .skillInner .skillCon > div .skillBox > img{margin-top:21px; height:40px;}
+#contents #skill .skillInner .skillCon > div > strong{display:block; margin-top:6px; font-size:16px; text-transform:uppercase;}
 
     /* #contents #portfolio */
-#contents #portfolio{position:relative; overflow:hidden; padding-bottom:80px;}
-#contents #portfolio .portfolioCon{width:100%; margin-bottom:40px; padding:30px; background:#ddd; text-align:center;}
-#contents #portfolio .portfolioCon:not(:nth-of-type(1)):not(:nth-of-type(2)){display:none;}
-
-
-#contents #portfolio .portfolioCon:before{content:""; display:block; width:100%; height:130px;}
-#contents #portfolio .portfolioCon:hover:before{transform:scale(1.01);}
-
-
-#contents #portfolio .webpaint:before{background:url(../img/webpaint.jpg) center top no-repeat; background-size:cover;}
-#contents #portfolio .crios:before{background:url(../img/crios.jpg) center top no-repeat; background-size:cover;}
-#contents #portfolio .daejinuniversity:before{background:url(../img/daejinuniversity.jpg) center top no-repeat; background-size:cover;}
-#contents #portfolio .enlightendesigns:before{background:url(../img/enlightendesigns.jpg) center top no-repeat; background-size:cover;}
-#contents #portfolio .login:before{background:url(../img/login.jpg) center top no-repeat; background-size:cover;}
-#contents #portfolio .filter:before{background:url(../img/filter.jpg) center top no-repeat; background-size:cover;}
-#contents #portfolio .portfolioCon > strong{display:block; margin-top:20px; font-size:30px; text-transform:uppercase;}
-#contents #portfolio .portfolioCon > span{display:block; font-size:18px; text-transform:uppercase;}
-#contents #portfolio .portfolioCon > p{color:#444; font-size:16px;}
-#contents #portfolio .portfolioCon > a{display:inline-block; width:100%; height:40px; margin:5px 0; border:1px solid #2f2f2f; color:inherit; line-height:40px; font-size:15px; text-decoration:none;}
-#contents #portfolio .portfolioCon > a:hover, #contents #portfolio .portfolioCon > a:focus{background:#2f2f2f; color:#fff;}
-#contents #portfolio .portfolioCon > a:nth-of-type(1){margin-top:10px;}
-#contents #portfolio .portfolioCon > a:nth-of-type(2){}
-
-
-
-#contents #portfolio #more{position:absolute; bottom:36px; left:50%; transform:translateX(-50%); transition:.5s; width:46px; height:46px; border-radius:50%; background:#ddd; color:inherit; text-decoration:none;}
-#contents #portfolio #more > img{display:block; height:12px; margin:17px auto 0;}
-
-
-
-
-
-
-
-
-
-
-/*
-#portfolio .portfolioCon{overflow:hidden; width:100%; height:200px; margin:40px 0; border:1px solid #9f9f9f;}
-#portfolio .portfolioCon > a > img{width:100%;}
-*/
-
-
-
-
-
-
+#contents #portfolio .portfolioInner{position:relative; overflow:hidden; padding-bottom:80px;}
+#contents #portfolio .portfolioInner .portfolioCon{float:left; width:100%; margin:0 0 40px; padding:30px; background:#ddd; text-align:center;}
+#contents #portfolio .portfolioInner .portfolioCon:not(:nth-of-type(1)):not(:nth-of-type(2)){display:none;}
+#contents #portfolio .portfolioInner .portfolioCon:before{content:""; display:block; width:100%; height:130px;}
+#contents #portfolio .portfolioInner .portfolioCon:hover:before, #contents #portfolio .portfolioInner .portfolioCon:focus:before{transform:scale(1.01); filter:brightness(80%);}
+#contents #portfolio .portfolioInner .portfolioCon:hover, #contents #portfolio .portfolioInner .portfolioCon:focus{background:rgba(0,0,0,.2);}
+#contents #portfolio .portfolioInner .portfolioCon:hover > strong, #contents #portfolio .portfolioInner .portfolioCon:focus > strong{font-size:31px;}
+#contents #portfolio .portfolioInner .webpaint:before{background:url(../img/webpaint.jpg) center top no-repeat; background-size:cover;}
+#contents #portfolio .portfolioInner .crios:before{background:url(../img/crios.jpg) center top no-repeat; background-size:cover;}
+#contents #portfolio .portfolioInner .daejinuniversity:before{background:url(../img/daejinuniversity.jpg) center top no-repeat; background-size:cover;}
+#contents #portfolio .portfolioInner .enlightendesigns:before{background:url(../img/enlightendesigns.jpg) center top no-repeat; background-size:cover;}
+#contents #portfolio .portfolioInner .login:before{background:url(../img/login.jpg) center top no-repeat; background-size:cover;}
+#contents #portfolio .portfolioInner .filter:before{background:url(../img/filter.jpg) center top no-repeat; background-size:cover;}
+#contents #portfolio .portfolioInner .portfolioCon > strong{display:block; overflow:hidden; margin-top:20px; font-size:30px; text-overflow:ellipsis; text-transform:uppercase; white-space:nowrap;}
+#contents #portfolio .portfolioInner .portfolioCon > span{display:block; font-size:18px; text-transform:uppercase;}
+#contents #portfolio .portfolioInner .portfolioCon > p{color:#444; font-size:16px;}
+#contents #portfolio .portfolioInner .portfolioCon > a{display:inline-block; width:100%; height:40px; margin:5px 0; border:1px solid #2f2f2f; color:inherit; line-height:40px; font-size:15px; text-decoration:none;}
+#contents #portfolio .portfolioInner .portfolioCon > a:hover, #contents #portfolio  .portfolioInner .portfolioCon > a:focus{background:#2f2f2f; color:#fff;}
+#contents #portfolio .portfolioInner .portfolioCon > a:nth-of-type(1){margin-top:10px;}
+#contents #portfolio .portfolioInner #more{position:absolute; bottom:36px; left:50%; transform:translateX(-50%); transition:.5s; width:46px; height:46px; border-radius:50%; background:#ddd; color:inherit; text-decoration:none;}
+#contents #portfolio .portfolioInner #more > img{display:block; height:12px; margin:17px auto 0;}
 
     /* #contents #contact */
-#contents #contact .txt{margin-bottom:40px; font-size:16px; text-align:center; word-break:keep-all;}
-#contents #contact > a{display:block; height:50px; margin-top:24px; border:1px solid #2f2f2f; border-radius:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-indent:47vw;}
-#contents #contact .mail{background:url('../img/mail.png') 39vw center no-repeat; background-size:16px;}
-#contents #contact .mail:hover, #contents #contact .mail:focus{background:#2f2f2f url('../img/mailOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
-#contents #contact .sms{background:url('../img/sms.png') 39vw center no-repeat; background-size:16px;}
-#contents #contact .sms:hover, #contents #contact .sms:focus{background:#2f2f2f url('../img/smsOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
-#contents #contact .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
-#contents #contact .call:hover, #contents #contact .call:focus{background:#2f2f2f url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
-#contents #contact > a:last-child{margin-bottom:24px;}
+#contents #contact .contactInner .txt{margin-bottom:40px; font-size:16px; text-align:center; word-break:keep-all;}
+#contents #contact .contactInner .mobile > a{display:block; height:50px; margin-top:24px; border:1px solid #2f2f2f; border-radius:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-indent:47vw;}
+#contents #contact .contactInner .mobile .mail{background:url('../img/mail.png') 39vw center no-repeat; background-size:16px;}
+#contents #contact .contactInner .mobile .mail:hover, #contents #contact .contactInner .mail:focus{background:#2f2f2f url('../img/mailOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .contactInner .mobile .sms{background:url('../img/sms.png') 39vw center no-repeat; background-size:16px;}
+#contents #contact .contactInner .mobile .sms:hover, #contents #contact .contactInner .sms:focus{background:#2f2f2f url('../img/smsOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .contactInner .mobile .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
+#contents #contact .contactInner .mobile .call:hover, #contents #contact .contactInner .call:focus{background:#2f2f2f url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+#contents #contact .contactInner .mobile > a:last-child{margin-bottom:24px;}
+
+
+
+.mobile{display:none;}
+#contents #contact .contactInner > div:last-child{text-align:center; margin-bottom:40px;}
+#contents #contact .contactInner > div:last-child > img{height:60px;}
+#contents #contact .contactInner > div:last-child > p:nth-of-type(1){margin-bottom:40px;}
+/*#contents #contact .contactInner > div:last-child > img, #contents #contact .contactInner > div:last-child > p{display:inline-block;}*/
+/*#contents #contact .contactInner > div:last-child > img{margin-right:10px;}*/
+/*#contents #contact .contactInner > div:last-child > p:nth-of-type(1){margin-right:40px;}*/
+
+
+
 
 /* #footer */
 #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
@@ -143,22 +118,62 @@ p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40p
 #footer > address{margin-top:10px; font-style:normal; text-decoration:}
 #footer > .copy{margin-top:10px;}
 
+/*@media screen and (min-width:480px){}*/
+@media (min-width:768px){
+    
+    /* popUp */
+    /*#popUp{display:none; z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
+    #popUp > a{text-decoration:none; text-align:center;}
+    #popUp > a > img{display:block; width:80px; margin:0 auto;}
+    #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
+    #popUp > button{position:absolute; top:-12px; right:-4px; width:30px; height:30px; padding:5px; border:2px solid #616161; border-radius:50%; background:#fff; color:#616161; font-size:16px;}*/
+    
+    /* #header */
+    #header{height:60px;}
+    #header .logo{top:17px; left:40px;}
+    #header .sideBt{top:20px; right:40px;}
+    
+    /* #side */
+    #side .close{top:16px; right:16px; font-size:18px;}
+    
+    /* #main*/
+    #main .txt{top:146px; padding:24px;}
+    
+    /* #contents */
+    #contents > div > div{width:750px; margin:0 auto; padding:80px 20px 20px;}
+    
+        /* #contents #skill */
+    #contents #skill .skillInner .skillCon > div{width:calc(100% / 3);}
+    
+        /* #contents #portfolio */
+    #contents #portfolio .portfolioInner .portfolioCon{width:calc(50% - 40px); margin:0 20px 40px;}
+    
+        /* #contents #contact */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* #footer */
+    #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
+    #footer > img{height:30px; margin-top:10px;}
+    #footer > address{margin-top:10px; font-style:normal; text-decoration:}
+    #footer > .copy{margin-top:10px;}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:1024px){
+@media (min-width:1024px){
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -169,4 +184,31 @@ p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40p
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
