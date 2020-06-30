@@ -95,7 +95,8 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #contact .contactInner .mobile > a:last-child{margin-bottom:24px;}
 #contents #contact .contactInner .tablet{text-align:center; margin-bottom:40px;}
 #contents #contact .contactInner .tablet .mail{margin-bottom:40px;}
-#contents #contact .contactInner .tablet .mail > img, #contents #contact .contactInner .tablet .call > img{height:50px;}
+#contents #contact .contactInner .tablet > div > img{height:40px; margin-bottom:10px;}
+#contents #contact .contactInner .tablet .mail > a{color:inherit;}
 
 /* #footer */
 #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
