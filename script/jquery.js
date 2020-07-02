@@ -93,9 +93,9 @@ $('#more').on('click',function(){
     });
 });*/
 
-/* menuTab */
-/*$('#menuTab').find('a').on('click',function(){
-    $('#menuTab').find('a').removeClass('on');
+/* sideTab */
+/*$('#sideTab').find('a').on('click',function(){
+    $('#sideTab').find('a').removeClass('on');
     $(this).addClass('on');
     $('#contents').children('div').hide();
     $($(this).attr('href')).show();

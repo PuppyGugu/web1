@@ -5,24 +5,25 @@ ul, ol, li{list-style:none;}
 /* font */
 @font-face{src:url("../font/NotoSansCJKkr-Regular.otf"); font-family: "notoSans";}
 
-/* common */
-.mobile{display:block;}
-.tablet{display:none;}
-.pc{display:none;}
-
 /* body */
 body{color:#2f2f2f; font-family:notoSans;}
 
 /* #header */
-#header{z-index:10; opacity:.8; position:fixed; width:100%; height:50px; border-bottom:1px solid #f1f1f1; background:#fff;}
+#header{z-index:10; opacity:.8; position:fixed; overflow:hidden; width:100%; height:50px; border-bottom:1px solid #f1f1f1; background:#fff;}
 #header .logo{position:absolute; top:12px; left:30px;}
 #header .logo > a > img{display:block; height:26px;}
 #header .sideBt{position:absolute; top:15px; right:30px;}
 #header .sideBt > img{display:block; height:20px;}
+#header .menu{display:none; float:right; overflow:hidden; height:30px; margin:15px 40px 0 0;}
+#header .menu > li{float:left;}
+#header .menu > li > a{display:block; padding:0 20px; color:inherit; font-size:16px; line-height:30px; text-decoration:none;}
+
+
+
 
 /* #side */
-#side{z-index:20; position:fixed; top:0; right:-220px; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
-#side .sideInner{margin-top:186px;}
+#side{z-index:20; position:fixed; top:0; right:-220px; overflow:auto; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
+#side .sideInner{margin:186px 0 93px;}
 #side .sideInner > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
 #side .sideInner > li > a:hover, #side .sideInner > li > a:focus{color:#fff;}
 #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
@@ -48,6 +49,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #about .aboutInner > img{display:block; height:200px; margin:50px auto 0;}
 #contents #about .aboutInner .txt{padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
 #contents #about .aboutInner .txt:nth-of-type(2){margin-top:40px;}
+#contents #about .aboutInner .txt.pcOver{display:none;}
 
     /* #contents #skill */
 #contents #skill .skillInner{text-align:center;}
@@ -93,10 +95,10 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #contact .contactInner .mobile .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
 #contents #contact .contactInner .mobile .call:hover, #contents #contact .contactInner .call:focus{background:#2f2f2f url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
 #contents #contact .contactInner .mobile > a:last-child{margin-bottom:24px;}
-#contents #contact .contactInner .tablet{text-align:center; margin-bottom:40px;}
-#contents #contact .contactInner .tablet .mail{margin-bottom:40px;}
-#contents #contact .contactInner .tablet > div > img{height:40px; margin-bottom:10px;}
-#contents #contact .contactInner .tablet .mail > a{color:inherit;}
+#contents #contact .contactInner .tabletOver{display:none; text-align:center; margin-bottom:40px;}
+#contents #contact .contactInner .tabletOver .mail{margin-bottom:40px;}
+#contents #contact .contactInner .tabletOver > div > img{height:40px; margin-bottom:10px;}
+#contents #contact .contactInner .tabletOver .mail > a{color:inherit;}
 
 /* #footer */
 #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
@@ -113,10 +115,6 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /*@media screen and (min-width:480px){}*/
 @media (min-width:768px){
-    /* common */
-    .mobile{display:none;}
-    .tablet{display:block;}
-    
     /* #header */
     #header{height:60px;}
     #header .logo{top:17px; left:40px;}
@@ -138,12 +136,31 @@ body{color:#2f2f2f; font-family:notoSans;}
     #contents #portfolio .portfolioInner .portfolioCon{width:calc(50% - 10px); margin:0 0 40px;}
     #contents #portfolio .portfolioInner .portfolioCon:nth-child(even){margin-right:10px;}
     #contents #portfolio .portfolioInner .portfolioCon:nth-child(odd){margin-left:10px;}
+    
+        /* #contents #contact */
+    #contents #contact .contactInner .mobile{display:none;}
+    #contents #contact .contactInner .tabletOver{display:block;}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:1024px){
-    /* common */
-    .tablet{display:none;}
-    .pc{display:block;}
     
     
     
@@ -158,6 +175,120 @@ body{color:#2f2f2f; font-family:notoSans;}
     
     
     
+    
+    
+    /* #header */
+    #header .sideBt{display:none;}
+    #header .menu{display:block;}
+    
+    /* #side */
+    #side{z-index:20; position:fixed; top:0; right:-220px; overflow:auto; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
+    #side .sideInner{margin:186px 0 93px;}
+    #side .sideInner > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
+    #side .sideInner > li > a:hover, #side .sideInner > li > a:focus{color:#fff;}
+    #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
+    
+    /* #side */
+    #side .close{top:16px; right:16px; font-size:18px;}
+    
+    /* #side - #dim */
+    #dim{z-index:19; display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
+    
+    /* #main*/
+    #main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:contain; text-align:center;}
+    #main .txt{display:none; position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; outline-offset:8px; background:rgba(255,255,255,.8); word-break:keep-all;}
+    #main .txt > h2{font-size:24px; line-height:48px;}
+    #main .txt > p{font-size:16px; line-height:22px;}
+    
+    /* #main*/
+    #main .txt{top:146px; padding:24px;}
+    
+    /* #contents */
+    #contents > div{width:100%;}
+    #contents > div > div{padding:60px 20px 20px;}
+    #contents > div:nth-child(odd){background:#f6f6f6;}
+    #contents > div > div > p.tit{font-size:24px;}
+    #contents > div > div > p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
+    
+    /* #contents */
+    #contents > div > div{width:750px; margin:0 auto; padding:80px 20px 20px;}
+    
+        /* #contents #about */
+    #contents #about .aboutInner:after{content:""; display:block; margin-bottom:40px;}
+    #contents #about .aboutInner > img{display:block; height:200px; margin:50px auto 0;}
+    #contents #about .aboutInner .txt{padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
+    #contents #about .aboutInner .txt:nth-of-type(2){margin-top:40px;}
+    #contents #about .aboutInner .txt.pcOver{display:block;}
+    
+        /* #contents #skill */
+    #contents #skill .skillInner{text-align:center;}
+    #contents #skill .skillInner .tit{text-align:left;}
+    #contents #skill .skillInner > span{display:inline-block; margin-bottom:10px; padding:6px 30px; font-size:16px; font-weight:bold; border:1px solid #dedede; border-radius:19px; box-shadow:4px 4px 4px 2px #dedede;}
+    #contents #skill .skillInner > span:nth-of-type(2){margin-top:20px;}
+    #contents #skill .skillInner .skillCon{overflow:hidden; width:90%; margin:30px auto 0;}
+    #contents #skill .skillInner .skillCon > div{float:left; width:50%; margin-bottom:50px;}
+    #contents #skill .skillInner .skillCon > div .skillBox{width:80px; height:80px; background:#ddd; border-radius:50%; margin:0 auto;}
+    #contents #skill .skillInner .skillCon > div .skillBox > img{margin-top:21px; height:40px;}
+    #contents #skill .skillInner .skillCon > div > strong{display:block; margin-top:6px; font-size:16px; text-transform:uppercase;}
+    
+        /* #contents #skill */
+    #contents #skill .skillInner .skillCon > div{width:calc(100% / 3);}
+    
+        /* #contents #portfolio */
+    #contents #portfolio .portfolioInner{position:relative; overflow:hidden; padding-bottom:80px;}
+    #contents #portfolio .portfolioInner .portfolioCon{float:left; width:100%; margin:0 0 40px; padding:30px; background:#ddd; text-align:center;}
+    #contents #portfolio .portfolioInner .portfolioCon:not(:nth-of-type(1)):not(:nth-of-type(2)){display:none;}
+    #contents #portfolio .portfolioInner .portfolioCon:before{content:""; display:block; width:100%; height:130px;}
+    #contents #portfolio .portfolioInner .portfolioCon:hover:before, #contents #portfolio .portfolioInner .portfolioCon:focus:before{transform:scale(1.01); filter:brightness(80%);}
+    #contents #portfolio .portfolioInner .portfolioCon:hover, #contents #portfolio .portfolioInner .portfolioCon:focus{background:rgba(0,0,0,.2);}
+    #contents #portfolio .portfolioInner .portfolioCon:hover > strong, #contents #portfolio .portfolioInner .portfolioCon:focus > strong{font-size:31px;}
+    #contents #portfolio .portfolioInner .webpaint:before{background:url(../img/webpaint.jpg) center top no-repeat; background-size:cover;}
+    #contents #portfolio .portfolioInner .crios:before{background:url(../img/crios.jpg) center top no-repeat; background-size:cover;}
+    #contents #portfolio .portfolioInner .daejinuniversity:before{background:url(../img/daejinuniversity.jpg) center top no-repeat; background-size:cover;}
+    #contents #portfolio .portfolioInner .enlightendesigns:before{background:url(../img/enlightendesigns.jpg) center top no-repeat; background-size:cover;}
+    #contents #portfolio .portfolioInner .login:before{background:url(../img/login.jpg) center top no-repeat; background-size:cover;}
+    #contents #portfolio .portfolioInner .filter:before{background:url(../img/filter.jpg) center top no-repeat; background-size:cover;}
+    #contents #portfolio .portfolioInner .portfolioCon > strong{display:block; overflow:hidden; margin-top:20px; font-size:30px; text-overflow:ellipsis; text-transform:uppercase; white-space:nowrap;}
+    #contents #portfolio .portfolioInner .portfolioCon > span{display:block; font-size:18px; text-transform:uppercase;}
+    #contents #portfolio .portfolioInner .portfolioCon > p{color:#444; font-size:16px;}
+    #contents #portfolio .portfolioInner .portfolioCon > a{display:inline-block; width:100%; height:40px; margin:5px 0; border:1px solid #2f2f2f; color:inherit; line-height:40px; font-size:15px; text-decoration:none;}
+    #contents #portfolio .portfolioInner .portfolioCon > a:hover, #contents #portfolio  .portfolioInner .portfolioCon > a:focus{background:#2f2f2f; color:#fff;}
+    #contents #portfolio .portfolioInner .portfolioCon > a:nth-of-type(1){margin-top:10px;}
+    #contents #portfolio .portfolioInner #more{position:absolute; bottom:36px; left:50%; transform:translateX(-50%); transition:.5s; width:46px; height:46px; border-radius:50%; background:#ddd; color:inherit; text-decoration:none;}
+    #contents #portfolio .portfolioInner #more > img{display:block; height:12px; margin:17px auto 0;}
+    
+        /* #contents #portfolio */
+    #contents #portfolio .portfolioInner .portfolioCon{width:calc(50% - 10px); margin:0 0 40px;}
+    #contents #portfolio .portfolioInner .portfolioCon:nth-child(even){margin-right:10px;}
+    #contents #portfolio .portfolioInner .portfolioCon:nth-child(odd){margin-left:10px;}
+    
+        /* #contents #contact */
+    #contents #contact .contactInner .txt{margin-bottom:40px; font-size:16px; text-align:center; word-break:keep-all;}
+    #contents #contact .contactInner .mobile > a{display:block; height:50px; margin-top:24px; border:1px solid #2f2f2f; border-radius:20px; color:inherit; line-height:50px; font-size:16px; text-decoration:none; text-indent:47vw;}
+    #contents #contact .contactInner .mobile .mail{background:url('../img/mail.png') 39vw center no-repeat; background-size:16px;}
+    #contents #contact .contactInner .mobile .mail:hover, #contents #contact .contactInner .mail:focus{background:#2f2f2f url('../img/mailOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+    #contents #contact .contactInner .mobile .sms{background:url('../img/sms.png') 39vw center no-repeat; background-size:16px;}
+    #contents #contact .contactInner .mobile .sms:hover, #contents #contact .contactInner .sms:focus{background:#2f2f2f url('../img/smsOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+    #contents #contact .contactInner .mobile .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
+    #contents #contact .contactInner .mobile .call:hover, #contents #contact .contactInner .call:focus{background:#2f2f2f url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
+    #contents #contact .contactInner .mobile > a:last-child{margin-bottom:24px;}
+    #contents #contact .contactInner .tabletOver{text-align:center; margin-bottom:40px;}
+    #contents #contact .contactInner .tabletOver .mail{margin-bottom:40px;}
+    #contents #contact .contactInner .tabletOver > div > img{height:40px; margin-bottom:10px;}
+    #contents #contact .contactInner .tabletOver .mail > a{color:inherit;}
+    
+    /* #footer */
+    #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
+    #footer > img{height:30px; margin-top:10px;}
+    #footer > address{margin-top:10px; font-style:normal; text-decoration:}
+    #footer > .copy{margin-top:10px;}
+    
+    /* popUp */
+    #popUp{/*display:none;*/ z-index:18; position:fixed; bottom:6px; right:30px; width:100px; height:140px;}
+    #popUp > a{text-decoration:none; text-align:center;}
+    #popUp > a > img{display:block; width:80px; margin:0 auto;}
+    #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
+    #popUp > button{position:absolute; top:-12px; right:-4px; width:30px; height:30px; padding:5px; border:2px solid #616161; border-radius:50%; background:#fff; color:#616161; font-size:16px;}
     
 }
 
