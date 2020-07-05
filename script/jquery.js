@@ -3,6 +3,14 @@ $('.popUpClose').on('click',function(){
     $('#popUp').hide();
 });
 
+/* menu animate */
+$('.menu').find('a').on('click',function(){
+    $('html, body').stop().animate({
+        scrollTop:$($(this).attr('href')).offset().top
+    },500);
+    return false;
+});
+
 /* side open */
 $('.sideBt').on('click',function(){
     $('#side').animate({

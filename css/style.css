@@ -16,10 +16,9 @@ body{color:#2f2f2f; font-family:notoSans;}
 #header .sideBt > img{display:block; height:20px;}
 #header .menu{display:none; float:right; overflow:hidden; height:30px; margin:15px 40px 0 0;}
 #header .menu > li{float:left;}
-#header .menu > li > a{display:block; padding:0 20px; color:inherit; font-size:16px; line-height:30px; text-decoration:none;}
-
-
-
+#header .menu > li > a{display:block; transition:.3s; padding:0 20px; color:inherit; font-size:16px; line-height:30px; text-decoration:none;}
+#header .menu > li > a.bold{font-weight:bold;}
+#header .menu > li:hover > a{transform:translateY(-100%);}
 
 /* #side */
 #side{z-index:20; position:fixed; top:0; right:-220px; overflow:auto; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
@@ -39,12 +38,13 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /* #contents */
 #contents > div{width:100%;}
-#contents > div > div{padding:60px 20px 20px;}
 #contents > div:nth-child(odd){background:#f6f6f6;}
+#contents > div > div{padding:60px 20px 20px;}
 #contents > div > div > p.tit{font-size:24px;}
 #contents > div > div > p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
 
     /* #contents #about */
+#contents #about .aboutInner{overflow:hidden;}
 #contents #about .aboutInner:after{content:""; display:block; margin-bottom:40px;}
 #contents #about .aboutInner > img{display:block; height:200px; margin:50px auto 0;}
 #contents #about .aboutInner .txt{padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
@@ -142,83 +142,39 @@ body{color:#2f2f2f; font-family:notoSans;}
     #contents #contact .contactInner .tabletOver{display:block;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width:1024px){
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /* #header */
     #header .sideBt{display:none;}
     #header .menu{display:block;}
     
-    /* #side */
-    #side{z-index:20; position:fixed; top:0; right:-220px; overflow:auto; width:220px; height:100%; padding:0 22px; background:#2f2f2f;}
-    #side .sideInner{margin:186px 0 93px;}
-    #side .sideInner > li > a{display:block; height:60px; color:#a5a5a5; line-height:60px; font-size:16px; text-decoration:none; text-indent:22px;}
-    #side .sideInner > li > a:hover, #side .sideInner > li > a:focus{color:#fff;}
-    #side .close{position:absolute; top:12px; right:12px; border:none; background:none; color:#acacac; font-size:14px; font-weight:bold;}
-    
-    /* #side */
-    #side .close{top:16px; right:16px; font-size:18px;}
-    
-    /* #side - #dim */
-    #dim{z-index:19; display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
-    
     /* #main*/
-    #main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:contain; text-align:center;}
-    #main .txt{display:none; position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; outline-offset:8px; background:rgba(255,255,255,.8); word-break:keep-all;}
-    #main .txt > h2{font-size:24px; line-height:48px;}
-    #main .txt > p{font-size:16px; line-height:22px;}
-    
-    /* #main*/
-    #main .txt{top:146px; padding:24px;}
+    #main{height:700px;}
+    #main .txt{top:192px; padding:46px; outline-offset:14px;}
+    #main .txt > h2{margin-top:-8px; font-size:28px;}
     
     /* #contents */
-    #contents > div{width:100%;}
-    #contents > div > div{padding:60px 20px 20px;}
-    #contents > div:nth-child(odd){background:#f6f6f6;}
-    #contents > div > div > p.tit{font-size:24px;}
-    #contents > div > div > p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
-    
-    /* #contents */
-    #contents > div > div{width:750px; margin:0 auto; padding:80px 20px 20px;}
+    #contents > div > div{width:900px; padding:120px 20px 140px;}
+    #contents > div > div > p.tit:after{margin:16px 0 70px;}
+
     
         /* #contents #about */
-    #contents #about .aboutInner:after{content:""; display:block; margin-bottom:40px;}
-    #contents #about .aboutInner > img{display:block; height:200px; margin:50px auto 0;}
-    #contents #about .aboutInner .txt{padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
-    #contents #about .aboutInner .txt:nth-of-type(2){margin-top:40px;}
-    #contents #about .aboutInner .txt.pcOver{display:block;}
+    #contents #about .aboutInner > img{float:left; margin:0 0 0 50px;}
+    #contents #about .aboutInner .txt{float:right; width:380px; margin-right:50px; padding:0 0;}
+    #contents #about .aboutInner .txt:nth-of-type(2){margin-top:52px;}
+    #contents #about .aboutInner .txt.pcOver{display:block; margin-top:0;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
         /* #contents #skill */
     #contents #skill .skillInner{text-align:center;}
@@ -272,10 +228,14 @@ body{color:#2f2f2f; font-family:notoSans;}
     #contents #contact .contactInner .mobile .call{background:url('../img/call.png') 39vw center no-repeat; background-size:16px;}
     #contents #contact .contactInner .mobile .call:hover, #contents #contact .contactInner .call:focus{background:#2f2f2f url('../img/callOn.png') 39vw center no-repeat; background-size:16px; color:#fff;}
     #contents #contact .contactInner .mobile > a:last-child{margin-bottom:24px;}
-    #contents #contact .contactInner .tabletOver{text-align:center; margin-bottom:40px;}
+    #contents #contact .contactInner .tabletOver{display:none; text-align:center; margin-bottom:40px;}
     #contents #contact .contactInner .tabletOver .mail{margin-bottom:40px;}
     #contents #contact .contactInner .tabletOver > div > img{height:40px; margin-bottom:10px;}
     #contents #contact .contactInner .tabletOver .mail > a{color:inherit;}
+    
+        /* #contents #contact */
+    #contents #contact .contactInner .mobile{display:none;}
+    #contents #contact .contactInner .tabletOver{display:block;}
     
     /* #footer */
     #footer{padding:16px 0; background:#2f2f2f; color:#acacac; font-size:14px; text-align:center;}
@@ -289,14 +249,7 @@ body{color:#2f2f2f; font-family:notoSans;}
     #popUp > a > img{display:block; width:80px; margin:0 auto;}
     #popUp > a > p{margin-top:6px;  color:#000; font-size:14px; word-break:keep-all; text-shadow:-1px 1px 1px #fff;}
     #popUp > button{position:absolute; top:-12px; right:-4px; width:30px; height:30px; padding:5px; border:2px solid #616161; border-radius:50%; background:#fff; color:#616161; font-size:16px;}
-    
 }
-
-
-
-
-
-
 
 
 
