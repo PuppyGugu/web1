@@ -1,8 +1,3 @@
-/* popUp close */
-$('.popUpClose').on('click',function(){
-    $('#popUp').hide();
-});
-
 /* menu animate */
 $('.menu').find('a').on('click',function(){
     $('html, body').stop().animate({
@@ -53,9 +48,6 @@ $(document).on('click','#dim',function(){
     });
 });
 
-/* main show */
-$('#main').children('.txt').fadeIn(2000);
-
 /* portfolio toggle */
 $('#more').on('click',function(){
     if($(this).hasClass('fold') == false){
@@ -75,49 +67,7 @@ $('#more').on('click',function(){
     return false;
 });
 
-
-
-
-
-
-
-/*$('.skillBox').on('mouseenter',function(){
-    $(this).children('img').attr('src',$(this).attr('src').replace('off','on'));
-});*/
-
-/* side - sideBody */
-/*$('.sideBody').find('a').on('click',function(){
-    $('.sideBody').find('a').removeClass('on');
-    $(this).addClass('on');
-    
-    $('#contents').children('div').hide();
-    $($(this).attr('href')).show();
-    
-    $('#side').animate({
-        'right':'-220px'
-    },500);
-    $('#dim').fadeOut(function(){
-        $('#dim').remove();
-    });
-});*/
-
-/* sideTab */
-/*$('#sideTab').find('a').on('click',function(){
-    $('#sideTab').find('a').removeClass('on');
-    $(this).addClass('on');
-    $('#contents').children('div').hide();
-    $($(this).attr('href')).show();
-});*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* popUp close */
+$('.popUpClose').on('click',function(){
+    $('#popUp').hide();
+});
