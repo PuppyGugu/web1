@@ -71,3 +71,53 @@ $('#more').on('click',function(){
 $('.popUpClose').on('click',function(){
     $('#popUp').hide();
 });
+
+
+
+
+
+
+
+
+$(document).on('scroll',function(){
+    var aboutTit = 'hide';
+    
+    var aboutTop = $('#about').offset().top-600;
+    
+    
+    $(document).on('scroll',function(){
+        
+        var st = $(document).scrollTop();
+        
+        if(st >= aboutTop && aboutTit == 'hide'){
+            $('#about').find('.tit').css({
+                'transform':'translateX(0)','visibility':'visible'
+            });
+            aboutTit = 'show';
+        }else if(st < aboutTop && aboutTit == 'show'){
+            $('#about').find('.tit').css({
+                'transform':'translateX(-20%)','visibility':'hidden'
+            });
+            aboutTit = 'hide';
+        }
+    });
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

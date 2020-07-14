@@ -10,10 +10,13 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /* #header */
 #header{z-index:10; opacity:.8; position:fixed; overflow:hidden; width:100%; height:50px; border-bottom:1px solid #f1f1f1; background:#fff;}
+    /* #header .logo */
 #header .logo{position:absolute; top:12px; left:30px;}
 #header .logo > a > img{display:block; height:26px;}
+    /* #header .sideBt */
 #header .sideBt{position:absolute; top:15px; right:30px;}
 #header .sideBt > img{display:block; height:20px;}
+    /* #header .menu */
 #header .menu{display:none; float:right; overflow:hidden; height:30px; margin:15px 80px 0 0;}
 #header .menu > li{float:left;}
 #header .menu > li > a{display:block; transition:.3s; padding:0 20px; color:inherit; font-size:16px; line-height:30px; text-decoration:none;}
@@ -30,21 +33,35 @@ body{color:#2f2f2f; font-family:notoSans;}
 /* #side - #dim */
 #dim{z-index:19; display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.6);}
 
-/* #main*/
+/* #main */
 #main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:contain; text-align:center;}
-#main .txt{position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; outline-offset:8px; background:rgba(255,255,255,.8); word-break:keep-all;}
+#main .txt{animation:heartBeat 1.4s ease 0s infinite normal; position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; outline-offset:8px; background:rgba(255,255,255,.8); word-break:keep-all;}
 #main .txt > h2{font-size:24px; line-height:48px;}
 #main .txt > p{font-size:16px; line-height:22px;}
+@keyframes heartBeat{
+    10%{transform:translateX(-50%) scale(1.05);}
+    20%{transform:translateX(-50%) scale(1);}
+    30%{transform:translateX(-50%) scale(1.05);}
+    40%{transform:translateX(-50%) scale(1);}
+}
 
 /* #contents */
 #contents > div{width:100%;}
 #contents > div:nth-child(odd){background:#f6f6f6;}
-#contents > div > div{padding:60px 20px 20px;}
+#contents > div > div{overflow:hidden; padding:60px 20px 20px;}
 #contents > div > div > p.tit{font-size:24px;}
+
+
+
+
+#contents > div > div > p.tit{visibility:hidden; transform:translateX(-20%); transition:.3s;}
+
+
+
+
 #contents > div > div > p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
 
     /* #contents #about */
-#contents #about .aboutInner{overflow:hidden;}
 #contents #about .aboutInner:after{content:""; display:block; margin-bottom:40px;}
 #contents #about .aboutInner > img{display:block; height:200px; margin:50px auto 0;}
 #contents #about .aboutInner .txt{padding:0 10vw; font-size:16px; text-align:center; text-transform:uppercase; word-break:keep-all;}
@@ -64,7 +81,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #skill .skillInner .skillCon > div > strong{display:block; margin-top:6px; font-size:16px; text-transform:uppercase;}
 
     /* #contents #portfolio */
-#contents #portfolio .portfolioInner{position:relative; overflow:hidden; padding-bottom:80px;}
+#contents #portfolio .portfolioInner{position:relative; padding-bottom:80px;}
 #contents #portfolio .portfolioInner .portfolioCon{position:relative; float:left; width:100%; height:400px; margin:0 0 40px; padding:30px; background:#ddd; text-align:center;}
 #contents #portfolio .portfolioInner .portfolioCon:not(:nth-of-type(1)):not(:nth-of-type(2)){display:none;}
 #contents #portfolio .portfolioInner .portfolioCon:before{content:""; position:absolute; top:0; left:0; transition:.3s; width:100%; height:100%;}
@@ -79,11 +96,8 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #portfolio .portfolioInner .portfolioCon > a:nth-of-type(1){top:279px;}
 #contents #portfolio .portfolioInner .portfolioCon > a:nth-of-type(2){top:324px;}
 #contents #portfolio .portfolioInner .portfolioCon > a:hover, #contents #portfolio  .portfolioInner .portfolioCon > a:focus{background:#2f2f2f; color:#fff;}
-
-
-
 #contents #portfolio .portfolioInner #more{position:absolute; bottom:36px; left:50%; transform:translateX(-50%); transition:.5s; width:46px; height:46px; border-radius:50%; background:#ddd; color:inherit; text-decoration:none;}
-#contents #portfolio .portfolioInner #more:hover, #contents #portfolio .portfolioInner #more:focus{background:#acacac;}
+#contents #portfolio .portfolioInner #more:hover{background:#acacac;}
 #contents #portfolio .portfolioInner #more > img{display:block; height:12px; margin:17px auto 0;}
 
     /* #contents #contact */
