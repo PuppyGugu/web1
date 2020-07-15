@@ -54,7 +54,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 
 
-#contents > div > div > p.tit{visibility:hidden; transform:translateX(-20%); transition:.3s;}
+#contents > div > div > p.tit{visibility:hidden; transform:translateX(-20%); transition:.5s;}
 
 
 
