@@ -72,80 +72,63 @@ $('.popUpClose').on('click',function(){
     $('#popUp').hide();
 });
 
-
-
-
-
 /* contents tit script */
 $(document).on('scroll',function(){
     var aboutTit = 'hide';
     var skillTit = 'hide';
     var portfolioTit = 'hide';
     var contactTit = 'hide';
+    
     var aboutTop = $('#about').offset().top-400;
     var skillTop = $('#skill').offset().top-400;
     var portfolioTop = $('#portfolio').offset().top-400;
     var contactTop = $('#contact').offset().top-400;
+    
     $(document).on('scroll',function(){
         var st = $(document).scrollTop();
         if(st >= aboutTop && aboutTit == 'hide'){
-            $('#about').find('.tit').css({
-                'transform':'translateX(0)','visibility':'visible'
-            });
+            $('#about').find('.tit').css(
+                'transform','translateX(0)'
+            );
             aboutTit = 'show';
         }else if(st < aboutTop && aboutTit == 'show'){
-            $('#about').find('.tit').css({
-                'transform':'translateX(-20%)','visibility':'hidden'
-            });
+            $('#about').find('.tit').css(
+                'transform','translateX(-40%)'
+            );
             aboutTit = 'hide';
         }
         if(st >= skillTop && skillTit == 'hide'){
-            $('#skill').find('.tit').css({
-                'transform':'translateX(0)','visibility':'visible'
-            });
+            $('#skill').find('.tit').css(
+                'transform','translateX(0)'
+            );
             skillTit = 'show';
         }else if(st < skillTop && skillTit == 'show'){
-            $('#skill').find('.tit').css({
-                'transform':'translateX(-20%)','visibility':'hidden'
-            });
+            $('#skill').find('.tit').css(
+                'transform','translateX(-40%)'
+            );
             skillTit = 'hide';
         }
         if(st >= portfolioTop && portfolioTit == 'hide'){
-            $('#portfolio').find('.tit').css({
-                'transform':'translateX(0)','visibility':'visible'
-            });
+            $('#portfolio').find('.tit').css(
+                'transform','translateX(0)'
+            );
             portfolioTit = 'show';
         }else if(st < portfolioTop && portfolioTit == 'show'){
-            $('#portfolio').find('.tit').css({
-                'transform':'translateX(-20%)','visibility':'hidden'
-            });
+            $('#portfolio').find('.tit').css(
+                'transform','translateX(-40%)'
+            );
             portfolioTit = 'hide';
         }
         if(st >= contactTop && contactTit == 'hide'){
-            $('#contact').find('.tit').css({
-                'transform':'translateX(0)','visibility':'visible'
-            });
+            $('#contact').find('.tit').css(
+                'transform','translateX(0)'
+            );
             contactTit = 'show';
         }else if(st < contactTop && contactTit == 'show'){
-            $('#contact').find('.tit').css({
-                'transform':'translateX(-20%)','visibility':'hidden'
-            });
+            $('#contact').find('.tit').css(
+                'transform','translateX(-40%)'
+            );
             contactTit = 'hide';
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
