@@ -39,9 +39,9 @@ body{color:#2f2f2f; font-family:notoSans;}
 #main .txt > h2{animation:heartBeat 1.4s ease 0s infinite normal; font-size:24px; line-height:48px;}
 #main .txt > p{font-size:16px; line-height:22px;}
 @keyframes heartBeat{
-    10%{transform:scale(1.05);}
+    10%{transform:scale(1.07);}
     20%{transform:scale(1);}
-    30%{transform:scale(1.05);}
+    30%{transform:scale(1.07);}
     40%{transform:scale(1);}
 }
 
@@ -66,27 +66,36 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #skill .skillInner > span:nth-of-type(2){margin-top:20px;}
 #contents #skill .skillInner .skillCon{overflow:hidden; width:90%; margin:30px auto 0;}
 #contents #skill .skillInner .skillCon > div{float:left; width:50%; margin-bottom:50px;}
-#contents #skill .skillInner .skillCon > div:hover .skillBox{background:#acacac;}
+#contents #skill .skillInner .skillCon > div:hover .skillBox{animation:flash 2s;}
+@keyframes flash{
+    from{background:#acacac;}
+    to{background:#ddd;}
+}
 #contents #skill .skillInner .skillCon > div .skillBox{transition:.3s; width:80px; height:80px; background:#ddd; border-radius:50%; margin:0 auto;}
 #contents #skill .skillInner .skillCon > div .skillBox > img{margin-top:21px; height:40px;}
 #contents #skill .skillInner .skillCon > div > strong{display:block; margin-top:6px; font-size:16px; text-transform:uppercase;}
 
     /* #contents #portfolio */
 #contents #portfolio .portfolioInner{position:relative; padding-bottom:80px;}
-#contents #portfolio .portfolioInner .portfolioCon{position:relative; float:left; width:100%; height:400px; margin:0 0 40px; padding:30px; background:#ddd; text-align:center;}
+#contents #portfolio .portfolioInner .portfolioCon{position:relative; float:left; overflow:hidden; width:100%; height:400px; margin:0 0 40px; padding:30px; background:#ddd; text-align:center;}
 #contents #portfolio .portfolioInner .portfolioCon:not(:nth-of-type(1)):not(:nth-of-type(2)){display:none;}
-#contents #portfolio .portfolioInner .portfolioCon:before{content:""; position:absolute; top:0; left:0; transition:.3s; width:100%; height:100%;}
-#contents #portfolio .portfolioInner .portfolioCon:hover:before{background:rgba(0,0,0,.1);}
+#contents #portfolio .portfolioInner .portfolioCon:before{z-index:1; content:""; position:absolute; top:0; left:0; transition:.3s; width:100%; height:100%;}
+#contents #portfolio .portfolioInner .portfolioCon:hover:before{background:rgba(0,0,0,.05);}
+#contents #portfolio .portfolioInner .portfolioCon:after{content:""; z-index:2; position:absolute; top:0; left:-80%; width:50%; height:100%; transform:skewX(-25deg); background:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);}
+#contents #portfolio .portfolioInner .portfolioCon:hover:after{animation:shine .75s;}
+@keyframes shine{
+    to{left:130%;}
+}
 #contents #portfolio .portfolioInner .portfolioCon .imgBox{overflow:hidden; width:100%; height:130px;}
 #contents #portfolio .portfolioInner .portfolioCon .imgBox > img{transition:.3s; width:100%;}
 #contents #portfolio .portfolioInner .portfolioCon:hover .imgBox > img{transform:scale(1.02);}
 #contents #portfolio .portfolioInner .portfolioCon > strong{display:block; margin-top:20px; font-size:30px; text-overflow:ellipsis; text-transform:uppercase; white-space:nowrap;}
 #contents #portfolio .portfolioInner .portfolioCon > span{display:block; font-size:18px; text-transform:uppercase;}
 #contents #portfolio .portfolioInner .portfolioCon > p{color:#444; font-size:16px;}
-#contents #portfolio .portfolioInner .portfolioCon > a{position:absolute; left:50%; display:inline-block; transform:translate(-50%); width:85%; height:40px; margin:5px 0; border:1px solid #2f2f2f; color:inherit; line-height:40px; font-size:15px; text-decoration:none;}
+#contents #portfolio .portfolioInner .portfolioCon > a{z-index:3; transition:.5s; position:absolute; left:50%; display:inline-block; transform:translate(-50%); width:85%; height:40px; margin:5px 0; border:1px solid #2f2f2f; color:inherit; line-height:40px; font-size:15px; text-decoration:none;}
+#contents #portfolio .portfolioInner .portfolioCon > a:hover, #contents #portfolio  .portfolioInner .portfolioCon > a:focus{/*box-shadow:300px 0 0 0 #2f2f2f inset;*/ background:#2f2f2f; color:#fff;}
 #contents #portfolio .portfolioInner .portfolioCon > a:nth-of-type(1){top:279px;}
 #contents #portfolio .portfolioInner .portfolioCon > a:nth-of-type(2){top:324px;}
-#contents #portfolio .portfolioInner .portfolioCon > a:hover, #contents #portfolio  .portfolioInner .portfolioCon > a:focus{background:#2f2f2f; color:#fff;}
 #contents #portfolio .portfolioInner #more{position:absolute; bottom:36px; left:50%; transform:translateX(-50%); transition:.5s; width:46px; height:46px; border-radius:50%; background:#ddd; color:inherit; text-decoration:none;}
 #contents #portfolio .portfolioInner #more:hover{background:#acacac;}
 #contents #portfolio .portfolioInner #more > img{display:block; height:12px; margin:17px auto 0;}
