@@ -47,10 +47,10 @@
 .brand .slickCon .bsLogo img{height:100%;}
 .brand .slickCon .tit{font-size:20px; color:#343434; padding:7.3px 0 6.8px; line-height:27px; font-weight:bold;}
 .brand .slickCon .txt{font-size:13px; color:#343434; line-height:15px;}
-.brand .slickCon.brandSlide1{background:url(../img/layout/brandImg1.png) right 7px bottom 15px no-repeat #fff / 190px auto; border:3px solid #f47933;}
-.brand .slickCon.brandSlide2{background:url(../img/layout/brandImg2.png) right 7px bottom 15px no-repeat #fff / 183px auto; border:3px solid #92d601;}
-.brand .slickCon.brandSlide3{background:url(../img/layout/brandImg3.png) right 7px bottom 15px no-repeat #fff / 160.5px auto; border:3px solid #ef4665;}
-.brand .slickCon a{text-decoration:none; color:#343434; border:1px solid #cfcfcf; display:block; width:124.5px; height:33px; line-height:33px; font-size:11px; text-align:left; padding-left:23.5px; margin-top:13px; background:url(../img/layout/plus.png) right 22.5px center no-repeat / 7.5px auto;}
+.brand .slickCon.brandSlide1{background:url(../img/layout/brandImg1.png) right 7px bottom 15px no-repeat #fff; background-size:190px auto; border:3px solid #f47933;}
+.brand .slickCon.brandSlide2{background:url(../img/layout/brandImg2.png) right 7px bottom 15px no-repeat #fff; background-size:183px auto; border:3px solid #92d601;}
+.brand .slickCon.brandSlide3{background:url(../img/layout/brandImg3.png) right 7px bottom 15px no-repeat #fff; background-size:160.5px auto; border:3px solid #ef4665;}
+.brand .slickCon a{text-decoration:none; color:#343434; border:1px solid #cfcfcf; display:block; width:124.5px; height:33px; line-height:33px; font-size:11px; text-align:left; padding-left:23.5px; margin-top:13px; background:url(../img/layout/plus.png) right 22.5px center no-repeat; background-size:7.5px auto;}
 
 /* slickBox brand - slick */
 .slick-list{overflow:hidden;}
@@ -63,8 +63,8 @@
 
 /* test */
 /*.slick-dots::after{content:''; background:url(../img/layout/pause_gray.png) center center no-repeat / 10px auto; display:inline-block; width:10px; height:10px; margin:0 5px;}*/
-.slick-dots .pause button{background:url(../img/layout/pause_gray.png) center center no-repeat / auto 10px; border-radius:0;}
-.visual .slick-dots .pause button{background:url(../img/layout/pause_white.png) center center no-repeat / auto 10px; border-radius:0;}
+.slick-dots .pause button{background:url(../img/layout/pause_gray.png) center center no-repeat; background-size:auto 10px; border-radius:0;}
+.visual .slick-dots .pause button{background:url(../img/layout/pause_white.png) center center no-repeat; background-size:auto 10px; border-radius:0;}
 
 
 .visual .slick-dots{position:absolute; margin:0; top:136vw;}
@@ -78,21 +78,21 @@
 .section .title strong{font-size:33px; color:#fff; display:block; padding:24px 0 0; line-height:57px; text-align:center;}
 .section .title a{text-decoration:none; display:block; width:calc(60.8vw - 34px); height:38px; line-height:38px; font-size:13px; color:#fff; margin:0 auto; padding-left:34px;}
 
-.section.foodCast .title{background:url(../img/layout/foodbg1.png) 0 0 no-repeat / cover;}
-.section.foodCast .title a{background:url(../img/layout/plus1.png) right 22.5px center no-repeat rgba(0,0,0,0.5) / 7.5px auto; border:1px solid rgba(255,255,255,0.5);}
-.section.foodKnowhow .title{background:url(../img/layout/foodbg2.png) 0 0 no-repeat / cover;}
-.section.foodKnowhow .title a{background:url(../img/layout/plus2.png) right 22.5px center no-repeat rgba(0,0,0,0.5) / 7.5px auto; border:1px solid rgba(255,255,255,0.5);}
-.section.cjwFriends .title{background:url(../img/layout/foodbg3.png) 0 0 no-repeat / cover;}
-.section.cjwFriends .title a{background:url(../img/layout/plus3.png) right 22.5px center no-repeat rgba(0,0,0,0.5) / 7.5px auto; border:1px solid rgba(255,255,255,0.5);}
+.section.foodCast .title{background:url(../img/layout/foodbg1.png) 0 0 no-repeat; background-size:cover;}
+.section.foodCast .title a{background:url(../img/layout/plus1.png) right 22.5px center no-repeat rgba(0,0,0,0.5); background-size:7.5px auto; border:1px solid rgba(255,255,255,0.5);}
+.section.foodKnowhow .title{background:url(../img/layout/foodbg2.png) 0 0 no-repeat; background-size:cover;}
+.section.foodKnowhow .title a{background:url(../img/layout/plus2.png) right 22.5px center no-repeat rgba(0,0,0,0.5); background-size:7.5px auto; border:1px solid rgba(255,255,255,0.5);}
+.section.cjwFriends .title{background:url(../img/layout/foodbg3.png) 0 0 no-repeat; background-size:cover;}
+.section.cjwFriends .title a{background:url(../img/layout/plus3.png) right 22.5px center no-repeat rgba(0,0,0,0.5); background-size:7.5px auto; border:1px solid rgba(255,255,255,0.5);}
 
 /* food - foodCast */
 .foodCast .foodCastBox .foodCastCon{border:1px solid #bdbdbd; border-radius:2px; height:242.5px; overflow:hidden; text-align:center; padding:1.5px 2px 0; margin:0 5px;}
-.section .sectionBox.foodCastBox .sectionCon .imgSection{ height:198.5px; background:url(../img/layout/foodCastImg1.png) center top no-repeat / cover;}
+.section .sectionBox.foodCastBox .sectionCon .imgSection{ height:198.5px; background:url(../img/layout/foodCastImg1.png) center top no-repeat; background-size:cover;}
 .section .sectionBox.foodCastBox .sectionCon a{text-decoration:none; color:#626262; font-size:13px; display:inline-block; margin-top:12px;}
 
 /* food - foodKnowhow */
 .foodKnowhow .foodKnowhowBox .foodKnowhowCon{border:1px solid #bdbdbd; border-radius:2px; height:242.5px; overflow:hidden; text-align:center; padding:1.5px 2px 0; margin:0 5px;}
-.section .sectionBox.foodKnowhowBox .sectionCon .imgSection{ height:198.5px; background:url(../img/layout/foodKnowhowImg1.png) center top no-repeat / cover;}
+.section .sectionBox.foodKnowhowBox .sectionCon .imgSection{ height:198.5px; background:url(../img/layout/foodKnowhowImg1.png) center top no-repeat; background-size:cover;}
 .section .sectionBox.foodKnowhowBox .sectionCon a{text-decoration:none; color:#626262; font-size:13px; display:inline-block; margin-top:6px; line-height:15px;}
 
 /* food - common */
@@ -100,37 +100,38 @@
 
 /* foodCastDetail*/
 .foodCast .foodCastDetail{padding:0 32px 18px;}
-.foodCast .foodCastDetail .foodCastDetail1{background:url(../img/layout/foodCastImg2.png) 13.5px 50% no-repeat #02b5d6 / 58px auto; display:block; text-decoration:none; border-radius:2px;}
-.foodCast .foodCastDetail .foodCastDetail1>span{display:block; padding:20.625px 87px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat / 15.5px auto;}
+.foodCast .foodCastDetail .foodCastDetail1{background:url(../img/layout/foodCastImg2.png) 13.5px 50% no-repeat #02b5d6; background-size:58px auto; display:block; text-decoration:none; border-radius:2px;}
+.foodCast .foodCastDetail .foodCastDetail1{background:url(../img/layout/foodCastImg2.png) 13.5px 50% no-repeat #02b5d6; background-size:58px auto; display:block; text-decoration:none; border-radius:2px;}
+.foodCast .foodCastDetail .foodCastDetail1>span{display:block; padding:20.625px 87px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat; background-size:15.5px auto;}
 .foodCast .foodCastDetail .foodCastDetail1 span strong{display:block; font-size:20px; line-height:27.25px; color:#000;}
 .foodCast .foodCastDetail .foodCastDetail1 span span{display:block; font-size:11px; line-height:13px; color:#000;}
 
-.foodCast .foodCastDetail .foodCastDetail2{background:url(../img/layout/foodCastImg3.png) 13.5px 50% no-repeat #76d9c5 / 58px auto; display:block; text-decoration:none; margin-top:10px; border-radius:2px;}
-.foodCast .foodCastDetail .foodCastDetail2>span{display:block; padding:20.625px 65px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat / 15.5px auto;}
+.foodCast .foodCastDetail .foodCastDetail2{background:url(../img/layout/foodCastImg3.png) 13.5px 50% no-repeat #76d9c5; background-size:58px auto; display:block; text-decoration:none; margin-top:10px; border-radius:2px;}
+.foodCast .foodCastDetail .foodCastDetail2>span{display:block; padding:20.625px 65px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat; background-size:15.5px auto;}
 .foodCast .foodCastDetail .foodCastDetail2 span strong{display:block; font-size:20px; line-height:27.25px; color:#000;}
 .foodCast .foodCastDetail .foodCastDetail2 span span{display:block; font-size:11px; line-height:13px; color:#000;}
 
 /* foodKnowhowDetail*/
 .foodKnowhow .foodKnowhowDetail{padding:0 32px 18px;}
-.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail1{background:url(../img/layout/foodKnowhowImg2.png) 13.5px 50% no-repeat #72dac5 / 58px auto; display:block; text-decoration:none; border-radius:2px;}
-.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail1>span{display:block; padding:20.625px 66.5px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat / 15.5px auto;}
+.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail1{background:url(../img/layout/foodKnowhowImg2.png) 13.5px 50% no-repeat #72dac5; background-size:58px auto; display:block; text-decoration:none; border-radius:2px;}
+.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail1>span{display:block; padding:20.625px 66.5px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat; background-size:15.5px auto;}
 .foodKnowhow .foodKnowhowDetail .foodKnowhowDetail1 span strong{display:block; font-size:20px; line-height:27.25px; color:#000;}
 .foodKnowhow .foodKnowhowDetail .foodKnowhowDetail1 span span{display:block; font-size:11px; line-height:13px; color:#000;}
 
-.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail2{background:url(../img/layout/foodKnowhowImg3.png) 13.5px 50% no-repeat #f5cc3f / 58px auto; display:block; text-decoration:none; margin-top:10px; border-radius:2px;}
-.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail2>span{display:block; padding:20.625px 35px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat / 15.5px auto;}
+.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail2{background:url(../img/layout/foodKnowhowImg3.png) 13.5px 50% no-repeat #f5cc3f; background-size:58px auto; display:block; text-decoration:none; margin-top:10px; border-radius:2px;}
+.foodKnowhow .foodKnowhowDetail .foodKnowhowDetail2>span{display:block; padding:20.625px 35px 22.25px 89px; background:url(../img/layout/arrow_right.png) right 11.5px center no-repeat; background-size:15.5px auto;}
 .foodKnowhow .foodKnowhowDetail .foodKnowhowDetail2 span strong{display:block; font-size:20px; line-height:27.25px; color:#000;}
 .foodKnowhow .foodKnowhowDetail .foodKnowhowDetail2 span span{display:block; font-size:11px; line-height:13px; color:#000;}
 
 /* ffCont */
 .ffCont{padding:9px 32px 31.5px;}
-.ffCont .box1{background:url(../img/layout/ffContImg1.png) 100% 100% no-repeat #f5cc3f / 105px auto; padding:24px 89.5px 21.5px 11px; margin-top:10px;}
+.ffCont .box1{background:url(../img/layout/ffContImg1.png) 100% 100% no-repeat #f5cc3f; background-size:105px auto; padding:24px 89.5px 21.5px 11px; margin-top:10px;}
 .ffCont .box1 strong{display:block; line-height:19.5px; font-size:18; color:#000; padding:0 0 13.5px; border-bottom:3px solid #f7d35a; word-break:keep-all;}
 .ffCont .box1 span{display:block; line-height:13px; font-size:11px; padding:12px 0 19.5px;}
 .ffCont .box1 a{display:inline-block; width:143px; height:33px; line-height:33px; font-size:13px; color:#000; border:2px solid #fff; border-radius:1px; background:rgba(255,255,255,0.5); text-align:center; text-decoration:none;}
 
-.ffCont .box2{background:url(../img/layout/ffContImg2.png) 14.5px 50% no-repeat #00b5d8 / 70.5px auto; display:block; text-decoration:none; margin-top:10px;}
-.ffCont .box2>span{background:url(../img/layout/arrow_right.png) right 10.5px center no-repeat / 15.5px auto; display:block; padding:15.5px 60px 23.5px 100px; min-height:61px;}
+.ffCont .box2{background:url(../img/layout/ffContImg2.png) 14.5px 50% no-repeat #00b5d8; background-size:70.5px auto; display:block; text-decoration:none; margin-top:10px;}
+.ffCont .box2>span{background:url(../img/layout/arrow_right.png) right 10.5px center no-repeat; background-size:15.5px auto; display:block; padding:15.5px 60px 23.5px 100px; min-height:61px;}
 .ffCont .box2 span strong{display:block; color:#fff; font-size:10px; line-height:18.5px; padding:0 0 3.5px;}
 .ffCont .box2 span span{display:block; color:#fff; font-size:12px; line-height:13px;}
 
@@ -144,8 +145,8 @@
 .ffCont .box3{border:1px solid #cfcfcf; margin-top:10px; overflow:hidden;}
 .ffCont .box3 a{width:calc(50% - 2px); border:1px solid #cfcfcf; float:left; height:30.5px; line-height:16px; padding:79.5px 0 0; text-align:center; text-decoration:none; color:#000;}
 /*line-heihgt 값은 임의로 지정 함*/
-.ffCont .box3 .box3_1{background:url(../img/layout/foodEditor.png) 50% 12.5px no-repeat #fff / 61.5px auto;}
-.ffCont .box3 .box3_2{background:url(../img/layout/cjtalk.png) 50% 12.5px no-repeat #fff / 61.5px auto;}
+.ffCont .box3 .box3_1{background:url(../img/layout/foodEditor.png) 50% 12.5px no-repeat #fff; background-size:61.5px auto;}
+.ffCont .box3 .box3_2{background:url(../img/layout/cjtalk.png) 50% 12.5px no-repeat #fff; background-size:61.5px auto;}
 
 
 /* sns */
@@ -186,9 +187,9 @@
 .snsBox dl dd .txt{padding:0 10px; font-size:13px; line-height:14px; color:#494949; display:block; text-decoration:none; height:42px; overflow:hidden;}
 /*line-height 값의 * 3배 값을 height 값으로 주고, overflow:hidden 시키면 딱 3줄만 나오게 된다.*/
 .snsBox dl.sbl dt{float:left; border-right:2px solid #eee;}
-.snsBox dl.sbl dd{float:right; background:url(../img/layout/sns3.png) right 5px top 17.5px no-repeat / 18px auto;}
+.snsBox dl.sbl dd{float:right; background:url(../img/layout/sns3.png) right 5px top 17.5px no-repeat; background-size:18px auto;}
 .snsBox dl.sbr dt{float:right; border-left:2px solid #eee;}
-.snsBox dl.sbr dd{float:left; background:url(../img/layout/sns1.png) right 5px top 17.5px no-repeat / 18px auto;}
+.snsBox dl.sbr dd{float:left; background:url(../img/layout/sns1.png) right 5px top 17.5px no-repeat; background-size:18px auto;}
 
 /* footer */
 #footer{background:#fbfbfb;}
@@ -201,9 +202,9 @@
 #footer .footer1wrap ul li:first-child a{color:#000;}
 #footer .footer1wrap ul li:nth-child(odd){border-bottom:1px solid #cfcfcf; border-right:1px solid #cfcfcf;}
 #footer .footer1wrap ul li:nth-child(even){border-bottom:1px solid #cfcfcf;}
-#footer .footer1wrap ul li:nth-of-type(7){background:url(../img/layout/ccmLogo.png) 33px 50% no-repeat / auto 25px;}
+#footer .footer1wrap ul li:nth-of-type(7){background:url(../img/layout/ccmLogo.png) 33px 50% no-repeat; background-size:auto 25px;}
 #footer .footer1wrap ul li:nth-of-type(7) a{font-size:10px; text-indent:65px;}
-#footer .footer1wrap ul li:nth-of-type(8){background:url(../img/layout/waLogo.png) 33px 50% no-repeat / auto 25px;}
+#footer .footer1wrap ul li:nth-of-type(8){background:url(../img/layout/waLogo.png) 33px 50% no-repeat; background-size:auto 25px;}
 #footer .footer1wrap ul li:nth-of-type(8) a{font-size:10px; text-indent:65px;}
 /* footer - footer2 */
 #footer .footer2wrap{width:100%; text-align:center; margin-top:28.5px;}
