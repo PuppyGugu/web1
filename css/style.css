@@ -89,7 +89,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents #portfolio .portfolioInner .portfolioCon .imgBox{overflow:hidden; width:100%; height:130px;}
 #contents #portfolio .portfolioInner .portfolioCon .imgBox > img{transition:.3s; width:100%;}
 /*#contents #portfolio .portfolioInner .portfolioCon:hover .imgBox > img{transform:scale(1.02);}*/
-#contents #portfolio .portfolioInner .portfolioCon > strong{display:block; margin-top:20px; font-size:30px; text-overflow:ellipsis; text-transform:uppercase; white-space:nowrap;}
+#contents #portfolio .portfolioInner .portfolioCon > strong{display:block; overflow:hidden; margin-top:20px; font-size:30px; text-overflow:ellipsis; text-transform:uppercase; white-space:nowrap;}
 #contents #portfolio .portfolioInner .portfolioCon > span{display:block; font-size:18px; text-transform:uppercase;}
 #contents #portfolio .portfolioInner .portfolioCon > p{color:#444; font-size:16px;}
 #contents #portfolio .portfolioInner .portfolioCon > a{z-index:3; transition:.3s; position:absolute; left:50%; display:inline-block; transform:translate(-50%); width:85%; height:40px; margin:5px 0; border:1px solid #2f2f2f; color:inherit; line-height:40px; font-size:15px; text-decoration:none;}
