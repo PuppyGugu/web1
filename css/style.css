@@ -3,7 +3,7 @@
 ul, ol, li{list-style:none;}
 
 /* font */
-@font-face{src:url("../font/NotoSansCJKkr-Regular.otf"); font-family: "notoSans";}
+@font-face{src:url("http://innerconsole.com/font/NotoSansCJKkr-Regular.otf"); font-family: "notoSans";}
 
 /* body */
 body{color:#2f2f2f; font-family:notoSans;}
