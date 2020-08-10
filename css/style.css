@@ -3,10 +3,15 @@
 ul, ol, li{list-style:none;}
 
 /* font */
-@font-face{src:url("http://innerconsole.com/font/NotoSansCJKkr-Regular.otf"); font-family:"notoSans";}
+@font-face{src:url("http://innerconsole.com/font/NotoSansCJKkr-Regular.otf"); font-family:notoSansR;}
+@font-face{src:url("http://innerconsole.com/font/NotoSansCJKkr-Medium.otf"); font-family:notoSansM;}
+@font-face{src:url("http://innerconsole.com/font/Recipekorea.ttf"); font-family:Recipekorea;}
+
+/*Recipekorea.ttf*/
+
 
 /* body */
-body{color:#2f2f2f; font-family:notoSans;}
+body{color:#2f2f2f; font-family:notoSansR;}
 
 /* #header */
 #header{z-index:10; opacity:.8; position:fixed; overflow:hidden; width:100%; height:50px; border-bottom:1px solid #f1f1f1; background:#fff;}
@@ -35,7 +40,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 
 /* #main */
 #main{position:relative; width:100%; height:500px; background:#000 url('../img/mainBg.jpg') center bottom no-repeat; background-size:contain; text-align:center;}
-#main .txt{position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; outline-offset:8px; background:rgba(255,255,255,.8); word-break:keep-all;}
+#main .txt{position:absolute; top:160px; left:50%; transform:translateX(-50%); padding:20px; outline:4px double #fff; outline-offset:8px; background:rgba(255,255,255,.8); font-family:Recipekorea; word-break:keep-all;}
 #main .txt > h2{animation:heartBeat 1.4s ease 0s infinite normal; font-size:24px; line-height:48px;}
 #main .txt > p{font-size:16px; line-height:22px;}
 @keyframes heartBeat{
@@ -49,7 +54,7 @@ body{color:#2f2f2f; font-family:notoSans;}
 #contents > div{width:100%;}
 #contents > div:nth-child(odd){background:#f6f6f6;}
 #contents > div > div{overflow:hidden; padding:60px 20px 20px;}
-#contents > div > div > p.tit{transform:translateX(-40%); transition:.5s; font-size:24px;}
+#contents > div > div > p.tit{transform:translateX(-40%); transition:.5s; font-family:notoSansM; font-size:24px;}
 #contents > div > div > p.tit:after{content:""; display:block; width:28px; height:3px; margin:16px 0 40px; background:#dedede;}
 
     /* #contents #about */
