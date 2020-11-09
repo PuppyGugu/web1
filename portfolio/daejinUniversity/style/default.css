@@ -16,6 +16,7 @@ a{text-decoration:none;}
 .imsi-sub-frame{position:relative; width:850px; height:600px; background-color:rgba(255,255,255,.7); border-radius:10px; margin:0 auto; margin-top:20px;}
 .imsi-left{margin-top:30px; position:absolute; left:0; width:425px; height:540px; border-right:1px solid rgba(255,255,255.7);}
 .imsi-right{margin-top:30px; position:absolute; right:0; width:425px; height:540px; border-right:1px solid rgba(255,255,255.7);}
+.imsi-right > a > div{margin-top:5px;}
 
 .imsi-right iframe{margin-bottom:5px; border-radius:5px;}
 
