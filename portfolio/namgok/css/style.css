@@ -5,21 +5,21 @@
 body{font-family:'noto-sans-Regular';}
 
 /* wrapMain */
-#wrapMain{width:100%; padding:70px 0 0 0; margin:0 auto; box-sizing:border-box;}
+#wrapMain{width:100%; min-width:1000px; padding:0; margin:0 auto; box-sizing:border-box;}
 
-#wrapSub{width:100%; padding:70px 0 0 0; margin:0 auto; box-sizing:border-box;}
+#wrapSub{width:100%; padding:0; margin:0 auto; box-sizing:border-box;}
 
 /* header */
-#header{position:fixed; top:0; left:50%; transform:translate(-50%, 0); display:flex; justify-content:space-between; align-items:center; width:100%; height:70px; padding:0 100px; box-sizing:border-box; background-color:#f5f5f5;}
+#header{position:relative; width:100%; min-width:1200px; height:70px; margin:0 auto; padding:0 100px; border-bottom:1px solid #ddd; box-sizing:border-box;}
 
 /* #header .logo{font-family:'SCDream4';} */
-#header .logo{font-family:'NIXGONFONTS_M'; font-size:20px !important;}
+#header .logo{position:absolute; top:24px; font-family:'NIXGONFONTS_M'; font-size:20px !important;}
 #header .logo{font-size:18px; font-weight:600; color:#000; text-decoration:none;}
 
-#header .menu{display:flex; align-items:center;}
-#header .menu > li{margin:0 10px;}
+#header .menu{position:absolute; top:21px; right:100px;}
+#header .menu > li{display:inline-block; margin:0 20px;}
 #header .menu > li:hover{font-weight:900;}
-#header .menu > li > a{color:#000; text-decoration:none;}
+#header .menu > li > a{color:#000; text-decoration:none; word-break:break-all;}
 
 /* container */
 #wrapMain #container, #wrapSub #container{width:100%; box-sizing:border-box;}
@@ -34,8 +34,16 @@ body{font-family:'noto-sans-Regular';}
 #wrapMain #container .short_cut > a > strong{margin-right:10px; vertical-align:middle; font-size:14px;}
 #wrapMain #container .short_cut > a > img{width:100px; vertical-align:middle;}
 
+#wrapMain #container .notice{margin-top:60px;}
+#wrapMain #container .notice h4{display:inline-block; padding-bottom:6px; font-size:24px; border-bottom:1px solid #ccc;}
+#wrapMain #container .notice .noticeArea{margin-top:20px;}
+#wrapMain #container .notice .noticeBox{display:inline-block; width:500px; min-width:500px; margin:20px; padding:20px; border: 1px solid #ccc; border-radius:10px;}
+#wrapMain #container .notice .noticeBox > h5{font-size:18px;}
+#wrapMain #container .notice .noticeBox > p{margin-top:10px; font-size:15px;}
+#wrapMain #container .notice .noticeBox > span{display:block; margin-top:40px; font-size:15px;}
+
 /* container - sub */
-#wrapSub #container{padding:60px;}
+#wrapSub #container{padding:60px 100px;}
 
 .topPattern {width: 100%;
     height: 20px;
