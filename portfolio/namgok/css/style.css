@@ -4,10 +4,9 @@
 /* 전체 */
 body{font-family:'noto-sans-Regular';}
 
-/* wrapMain */
+/* wrap */
 #wrapMain{width:100%; min-width:1000px; padding:0; margin:0 auto; box-sizing:border-box;}
-
-#wrapSub{width:100%; padding:0; margin:0 auto; box-sizing:border-box;}
+#wrapSub{width:100%; min-width:1000px; padding:0; margin:0 auto; box-sizing:border-box;}
 
 /* header */
 #header{position:relative; width:100%; min-width:1200px; height:70px; margin:0 auto; padding:0 100px; border-bottom:1px solid #ddd; box-sizing:border-box;}
@@ -26,8 +25,10 @@ body{font-family:'noto-sans-Regular';}
 
 /* container - main */
 #wrapMain #container{text-align:center;}
-#wrapMain #container .main_img{display:inline-block; width:100%;}
-#wrapMain #container .main_img .mainBanner{width:100%;}
+#wrapMain #container .mainImg{position:relative; width:100%;}
+#wrapMain #container .mainImg .mainText{position:absolute; width:100%; height:99.3%; padding:20% 0 0 16%; background-color:rgba(0, 0, 0, .4); font-size:22px; font-weight:200; color:#ccc; text-align:left; box-sizing:border-box;}
+#wrapMain #container .mainImg .mainText > span{font-size:25px; font-weight:500; color:#fff;}
+#wrapMain #container .mainImg .mainBanner{width:100%;}
 
 #wrapMain #container .short_cut{display:inline-block; margin-top:60px;}
 #wrapMain #container .short_cut > a{display:inline-block; padding:10px 20px; border:1px solid #ccc; border-radius:10px; text-decoration:none; color:#000;}
@@ -44,17 +45,7 @@ body{font-family:'noto-sans-Regular';}
 
 /* container - sub */
 #wrapSub #container{padding:60px 100px;}
-
-.topPattern {width: 100%;
-    height: 20px;
-    margin-bottom:40px;
-    background: linear-gradient(135deg,
-    #fff 25%, #d0b084 0, #d0b084 50%,
-    #fff 0, #fff 75%, #d0b084 0);
-    -webkit-background-size:30px 30px;
-    background-size:30px 30px;
-  }
-
+.topPattern {width:100%; height:20px; margin-bottom:40px; background:linear-gradient(135deg, #fff 25%, #d0b084 0, #d0b084 50%, #fff 0, #fff 75%, #d0b084 0); -webkit-background-size:30px 30px; background-size:30px 30px;}
 #wrapSub #container .title{display:block; border-top:2px solid #ccc; border-bottom:1px solid #ccc; padding:10px 20px; font-size:20px; vertical-align:middle;}
 #wrapSub #container .title .titleIcon{display:inline-block; margin-right:10px; padding:10px; border-radius:50%; background-color:#d0b084; vertical-align:middle; transform:translate(0, -10%);}
 #wrapSub #container .text{display:block; margin-top:30px; line-height:32px;}
@@ -68,10 +59,7 @@ table caption{text-align:left;}
 .fR{float:right;}
 
 /* footer */
-/* #footer{position:fixed; bottom:0; left:50%; transform:translate(-50%, 0); width:1200px; height:40px; padding:20px 0; background-color:#f5f5f5; font-size:14px; text-align:center;} */
 #footer{width:100%; height:40px; margin-top:60px; padding:20px 0; background-color:#f5f5f5; font-size:14px; text-align:center;}
-
 #footer .address{font-style:normal;}
 #footer .address > a{color:#000; text-decoration:none;}
-
 #footer .copy{margin-top:4px;}
